@@ -1,0 +1,1726 @@
+﻿<!DOCTYPE html>
+<html lang="en-US" class="" data-skin="light">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<script type="text/javascript" id="lpData">
+/* <![CDATA[ */
+var lpData = {"site_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog","user_id":"0","theme":"courselog","lp_rest_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/","nonce":"3b5006f705","is_course_archive":"","courses_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/courses\/","urlParams":{"add-to-cart":"5837"},"lp_version":"4.2.7.5","lp_rest_load_ajax":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/lp\/v1\/load_content_via_ajax\/","ajaxUrl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","coverImageRatio":"5.16","toast":{"gravity":"bottom","position":"center","duration":3000,"close":1,"stopOnFocus":1,"classPrefix":"lp-toast"},"i18n":[]};
+/* ]]> */
+</script>
+		<style id="learn-press-custom-css">
+			:root {
+				--lp-container-max-width: 1290px;
+				--lp-cotainer-padding: 1rem;
+				--lp-primary-color: #ffb606;
+				--lp-secondary-color: #442e66;
+			}
+		</style>
+		<title>Processing streaming data using apache flank &#8211; Woo Courselog</title>
+<link href="../../../../css?family=Manrope%3Aregular%2C700%2C400%2C900" rel="stylesheet"><meta name='robots' content='max-image-preview:large'>
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='//fonts.googleapis.com'>
+<link rel="alternate" type="application/rss+xml" title="Woo Courselog &raquo; Feed" href="../../feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Woo Courselog &raquo; Comments Feed" href="../../comments/feed/index.htm">
+<link rel="alternate" type="application/rss+xml" title="Woo Courselog &raquo; Processing streaming data using apache flank Comments Feed" href="feed/index.htm">
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<link rel='stylesheet' id='elementor-frontend-css' href='../../wp-content/plugins/elementor/assets/css/frontend.min.css?ver=3.26.4' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-post-6396-css' href='../../wp-content/uploads/sites/2/elementor/css/post-6396.css?ver=1717642812' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-post-6467-css' href='../../wp-content/uploads/sites/2/elementor/css/post-6467.css?ver=1717642812' type='text/css' media='all'>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='../../wp-includes/css/dist/block-library/style.min.css?ver=6.7.1' type='text/css' media='all'>
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--cardo: Cardo;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='photoswipe-css' href='https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/css/photoswipe/photoswipe.min.css?ver=9.5.2' type='text/css' media='all'>
+<link rel='stylesheet' id='photoswipe-default-skin-css' href='https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/css/photoswipe/default-skin/default-skin.min.css?ver=9.5.2' type='text/css' media='all'>
+<link rel='stylesheet' id='woocommerce-layout-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=9.5.2' type='text/css' media='all'>
+<link rel='stylesheet' id='woocommerce-smallscreen-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=9.5.2' type='text/css' media='only screen and (max-width: 768px)'>
+<link rel='stylesheet' id='woocommerce-general-css' href='../../wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=9.5.2' type='text/css' media='all'>
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='xs-front-style-css' href='../../wp-content/plugins/wp-social/assets/css/frontend.css?ver=3.0.9' type='text/css' media='all'>
+<link rel='stylesheet' id='xs_login_font_login_css-css' href='../../wp-content/plugins/wp-social/assets/css/font-icon.css?ver=3.0.9' type='text/css' media='all'>
+<link rel='stylesheet' id='timetics-vendor-css' href='../../wp-content/plugins/timetics/assets/css/vendor.css?ver=1.0.28' type='text/css' media='all'>
+<link rel='stylesheet' id='timetics-frontend-css' href='../../wp-content/plugins/timetics/assets/css/frontend.css?ver=1.0.28' type='text/css' media='all'>
+<link rel='stylesheet' id='cute-alert-css' href='../../wp-content/plugins/metform/public/assets/lib/cute-alert/style.css?ver=3.9.2' type='text/css' media='all'>
+<link rel='stylesheet' id='text-editor-style-css' href='../../wp-content/plugins/metform/public/assets/css/text-editor.css?ver=3.9.2' type='text/css' media='all'>
+<link rel='stylesheet' id='wur_content_css-css' href='../../wp-content/plugins/wp-ultimate-review/assets/public/css/content-page.css?ver=2.3.5' type='text/css' media='all'>
+<link rel='stylesheet' id='dashicons-css' href='../../wp-includes/css/dashicons.min.css?ver=6.7.1' type='text/css' media='all'>
+<link rel='stylesheet' id='etn-icon-css' href='../../wp-content/plugins/wp-event-solution/assets/css/etn-icon.css?ver=4.0.19' type='text/css' media='all'>
+<link rel='stylesheet' id='etn-public-css-css' href='../../wp-content/plugins/wp-event-solution/build/css/event-manager-public-styles.css?ver=4.0.19' type='text/css' media='all'>
+<link rel='stylesheet' id='elementskit-parallax-style-css' href='../../wp-content/plugins/courselog-essential/modules/parallax/assets/css/style.css?ver=1.5.9' type='text/css' media='all'>
+<link rel='stylesheet' id='courselog-fonts-css' href='../../../../css-1?family=Roboto%3A300%2C300i%2C400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i%7CRubik%3A400%2C400i%2C500%2C500i%2C700%2C700i%2C900%2C900i&#038;ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='bootstrap-css' href='../../wp-content/themes/courselog/assets/css/bootstrap.min.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='fontawesome-css' href='../../wp-content/themes/courselog/assets/css/fontawesome.min.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='iconfont-css' href='../../wp-content/themes/courselog/assets/css/iconfont.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='magnific-popup-css' href='../../wp-content/themes/courselog/assets/css/magnific-popup.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='owl-carousel-css' href='../../wp-content/themes/courselog/assets/css/owl.carousel.min.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='courselog-woocommerce-css' href='../../wp-content/themes/courselog/assets/css/woocommerce.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='courselog-custom-css' href='../../wp-content/themes/courselog/assets/css/courselog-custom.css?ver=1.4.1' type='text/css' media='all'>
+<link rel='stylesheet' id='courselog-style-css' href='../../wp-content/themes/courselog/assets/css/master.css?ver=1.4.1' type='text/css' media='all'>
+<style id='courselog-style-inline-css' type='text/css'>
+
+        body{ font-family:"Manrope";font-size:16px; }
+
+        h1{
+            font-family:"Manrope";font-weight:700;
+        }
+        h2{
+            font-family:"Manrope";font-weight:700;
+        }
+        h3{ 
+            font-family:"Manrope";font-weight:700; 
+        }
+
+        h4{ 
+            font-family:"Manrope";font-weight:700;
+        }
+    
+       
+      
+
+       .entry-header .entry-title a:hover, .sidebar ul li a:hover {
+            color: #F14D5D;
+        }
+
+        .entry-header .entry-title a,
+        .course-tab-panel-faqs .course-faqs-box__title {
+            color: #120F2D;
+        }
+     
+        body{
+            background-color: #fff;
+        }
+      
+     
+        .single-intro-text .count-number, .sticky.post .meta-featured-post,
+        .latest-blog .post .post-meta span:before,
+        .sidebar .widget .widget-title:before,
+        .pagination li.active a:hover,
+        .tag-lists a:hover, .tagcloud a:hover,
+        .BackTo, .ticket-btn.btn:hover,
+        .btn-primary,
+        .BackTo,
+        .woocommerce ul.products li.product .button,.woocommerce ul.products li.product .added_to_cart,
+        .woocommerce nav.woocommerce-pagination ul li a:focus, .woocommerce nav.woocommerce-pagination ul li a:hover, .woocommerce nav.woocommerce-pagination ul li span.current,
+        .woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt,.sponsor-web-link a:hover i, .woocommerce .widget_price_filter .ui-slider .ui-slider-range,
+        .woocommerce span.onsale,
+        #preloader,
+        .header .navbar-container .navbar-light .main-menu > li > a:before,
+        .tab-course-category ul li:before,
+        .co-single-instructor .co-instructors-socials li a:hover,
+        .course-entry-content .curriculum-content .curricolumn-list li a .curricolumn-preview,
+        .course-single-wrap .single-course .course-price-item span,
+        .single-course .course-category a:before,
+        .course-entry-content ul.nav li a:before,
+        .courselog-search-course-form .search-course-button,
+        .main-slider-style3 .slider-content .sub-title::before,
+        .main-menu .elementskit-navbar-nav > li > a::after,
+        .btn-primary, .learnpress-page .lp-button, .place-order-action .lp-button,
+        #learn-press-content-item #course-item-content-header .toggle-content-item,
+        #learn-press-content-item #course-item-content-header .lp-button:hover,
+        #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item .course-item-meta span,
+        .course-entry-content .public-xs-review-box .xs-save-button button,
+        .header-login-user a sup, .cartbtn a sup,
+        .user-dashboard .order-recover .button-recover-order,
+        .single_add_to_cart_button, .tutor-btn, .tutor-button, a.tutor-btn, a.tutor-button,
+        .courselog-events .entry-header .event-time:before,
+        .courselog-tab .courselog-navs-tab li a .title-content .content::before,
+        .learnpress-page .lp-button,
+        #checkout-payment #checkout-order-action button.lp-button,
+        .learndash-wrapper .ld-primary-background, .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after,
+        .learndash-wrapper .ld-primary-background, .learndash-wrapper .ld-tabs .ld-tabs-navigation .ld-tab.ld-active:after,
+       
+        .courselog-learndash-course .ld-single-course .ld-course-footer .ld-course-price, .ld-related-course .ld-single-course .ld-course-footer .ld-course-price,
+        .user-dashboard #learn-press-profile-nav .learn-press-tabs.tabs li.active > a, .user-dashboard #learn-press-profile-nav .learn-press-tabs.tabs li:hover > a,
+         .woocommerce ul.products li.product .added_to_cart:hover, .woocommerce #respond input#submit.alt:hover, .woocommerce a.button.alt:hover, .woocommerce button.button.alt:hover, .woocommerce input.button.alt:hover,.woocommerce .widget_price_filter .ui-slider .ui-slider-handle{
+            background: #F14D5D;
+        }
+
+        .btn-primary,
+        .btn-primary, .learnpress-page .lp-button, .place-order-action .lp-button,
+        .courselog-learndash-course .ld-single-course .ld-course-footer .ld-course-read-more:hover a, .ld-related-course .ld-single-course .ld-course-footer .ld-course-read-more:hover a,
+        .single_add_to_cart_button, .tutor-btn, .tutor-button, a.tutor-btn, a.tutor-button,
+        #checkout-payment #checkout-order-action button.lp-button,
+       .owl-carousel .owl-dots .owl-dot.active{
+            border-color: #F14D5D;
+        }
+        .user-dashboard .lp-profile-content .lp-tab-sections li.active span{
+            border-bottom-color: #F14D5D;
+        }
+      
+
+        #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item.current a:hover{
+            color: #fff;
+        }
+        .copyright .footer-social li a i:hover,
+        .copyright .copyright-text a,
+        .header .navbar-container .navbar-light .main-menu li a:hover,
+        .header .navbar-container .navbar-light .main-menu li.active > a,
+        .post .entry-header .entry-title a:hover,
+        a:hover,
+        .ts-course-category .single-course-category .course-category-title a:hover,
+        .courselog-events .entry-header .entry-title a:hover,
+        .woocommerce ul.products li.product .price, 
+        .footer-widget ul li a:hover,
+        .ts-footer .footer-menu li a:hover,
+        .courselog-course-latest h3.post-title a:hover,
+        .courselog-course-latest p,
+        .courselog-learndash-course .ld-single-course .ld-course-conent:hover .ts-title a, .ld-related-course .ld-single-course .ld-course-conent:hover .ts-title a,
+        .courselog-learndash-course .ld-single-course .ld-course-footer .ld-course-read-more:hover a, .ld-related-course .ld-single-course .ld-course-footer .ld-course-read-more:hover a,
+        .course-entry-content .curriculum-content .curricolumn-list li a i,
+        .course-entry-content .curriculum-content .curricolumn-list li a:hover,
+        .co-single-instructor .co-instructor-title a:hover,
+        .course-entry-content .curriculum-content .curriculmn-title:after,
+        .post-navigation span:hover, .post-navigation h3:hover,
+        .comments-list .comment-reply-link:hover,
+        .tutor-custom-list-style li:before,
+        .ld-tabs .ld-tabs-navigation .ld-tab.ld-active span,
+        .courselog-tab .courselog-navs-tab li a .title-content .title-icon,
+        .quiz-intro-item--questions-count::before,
+        .user-dashboard .lp-profile-content table td a:hover, .user-dashboard .lp-profile-content table th a:hover,
+         .user-dashboard .lp-profile-content .lp-list-table td a:hover, .user-dashboard .lp-profile-content .lp-list-table th a:hover,
+        #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item .section-item-link:hover,
+        .woocommerce ul.products li.product .woocommerce-loop-product__title:hover{
+            color: #F14D5D;
+        }
+        
+        /*  secondary color   */
+
+        .single-course .course-footer .course-price-item .course-price, .single-course .course-footer .course-price-item .free-course,
+        .btn-primary:hover, .btn-primary:active, .learn-press-form-login form button:hover, .learn-press-form-login form button:active,
+         .learnpress-page .lp-button:hover,
+         .course-single-wrap .single-course:hover .course-price-item span,
+         .header--course-meta .course-price span,
+         .course-entry-content .public-xs-review-box .xs-save-button button:hover,
+         #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item.item-preview .course-item-status,
+         #learn-press-course-curriculum.course-curriculum ul.curriculum-sections .section-content .course-item.current:before,
+         .user-dashboard .lp-profile-content .lp-tab-sections,
+         .course-entry-content ul.nav,
+         .pagination li.active a,
+         .pagination li:hover a, .pagination li:hover a:hover,
+         .learnpress-page .lp-button:active, .place-order-action .lp-button:hover,
+         #checkout-payment #checkout-order-action button.lp-button:hover,
+         .place-order-action .lp-button:active{
+            background-color: #2878EB;
+        }
+
+        .archive-widgets ul li.active a{
+            color: #2878EB;
+        }
+
+        .btn-primary:hover, .btn-primary:active,
+         .learn-press-form-login form button:hover,
+         .learn-press-form-login form button:active,
+         .learnpress-page .lp-button:hover, .learnpress-page .lp-button:active,
+          .place-order-action .lp-button:hover,
+          #checkout-payment #checkout-order-action button.lp-button:hover, 
+          .place-order-action .lp-button:active{
+              border-color:  #2878EB;
+          }
+
+
+
+        
+        .ts-footer{
+            background-color: #273c66;
+        }
+        
+        
+
+      .copyright .copyright-text{
+         color: #fff;
+      }
+
+     
+</style>
+<link rel='stylesheet' id='ekit-widget-styles-css' href='../../wp-content/plugins/elementskit-lite/widgets/init/assets/css/widget-styles.css?ver=3.3.7' type='text/css' media='all'>
+<link rel='stylesheet' id='ekit-responsive-css' href='../../wp-content/plugins/elementskit-lite/widgets/init/assets/css/responsive.css?ver=3.3.7' type='text/css' media='all'>
+<link rel='stylesheet' id='learnpress-widgets-css' href='../../wp-content/plugins/learnpress/assets/css/widgets.min.css?ver=4.2.7.5' type='text/css' media='all'>
+<link rel='stylesheet' id='google-fonts-1-css' href='../../../../css-2?family=Manrope%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.7.1' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-icons-ekiticons-css' href='../../wp-content/plugins/elementskit-lite/modules/elementskit-icon-pack/assets/css/ekiticons.css?ver=3.3.7' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.min.css?ver=5.15.3' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.min.css?ver=5.15.3' type='text/css' media='all'>
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin=""><script type="text/javascript" src="../../wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.9.5.2" id="jquery-blockui-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/courselog\/woo-courselog\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/cart\/","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=9.5.2" id="wc-add-to-cart-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/js/flexslider/jquery.flexslider.min.js?ver=2.7.2-wc.9.5.2" id="flexslider-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe.min.js?ver=4.1.1-wc.9.5.2" id="photoswipe-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/js/photoswipe/photoswipe-ui-default.min.js?ver=4.1.1-wc.9.5.2" id="photoswipe-ui-default-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="wc-single-product-js-extra">
+/* <![CDATA[ */
+var wc_single_product_params = {"i18n_required_rating_text":"Please select a rating","i18n_product_gallery_trigger_text":"View full-screen image gallery","review_rating_required":"yes","flexslider":{"rtl":false,"animation":"slide","smoothHeight":true,"directionNav":false,"controlNav":"thumbnails","slideshow":false,"animationSpeed":500,"animationLoop":false,"allowOneSlide":false},"zoom_enabled":"","zoom_options":[],"photoswipe_enabled":"1","photoswipe_options":{"shareEl":false,"closeOnScroll":false,"history":false,"hideAnimationDuration":0,"showAnimationDuration":0},"flexslider_enabled":"1"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/woocommerce/assets/js/frontend/single-product.min.js?ver=9.5.2" id="wc-single-product-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.9.5.2" id="js-cookie-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/courselog\/woo-courselog\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=9.5.2" id="woocommerce-js" defer="defer" data-wp-strategy="defer"></script>
+<script type="text/javascript" id="xs_front_main_js-js-extra">
+/* <![CDATA[ */
+var rest_config = {"rest_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/","nonce":"3b5006f705","insta_enabled":""};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-social/assets/js/front-main.js?ver=3.0.9" id="xs_front_main_js-js"></script>
+<script type="text/javascript" id="xs_social_custom-js-extra">
+/* <![CDATA[ */
+var rest_api_conf = {"siteurl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog","nonce":"3b5006f705","root":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/"};
+var wsluFrontObj = {"resturl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/","rest_nonce":"3b5006f705"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-social/assets/js/social-front.js?ver=6.7.1" id="xs_social_custom-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-ultimate-review/assets/public/script/content-page.js?ver=2.3.5" id="wur_review_content_script-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/jarallax.js?ver=1.5.9" id="jarallax-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/jquery.repeater.min.js?ver=1.4.1" id="jquery-repeater-min-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/learnpress/assets/js/dist/loadAJAX.min.js?ver=4.2.7.5" id="lp-load-ajax-js" async="async" data-wp-strategy="async"></script>
+<link rel="https://api.w.org/" href="../../wp-json/index.htm"><link rel="alternate" title="JSON" type="application/json" href="../../wp-json/wp/v2/product/5836"><link rel="EditURI" type="application/rsd+xml" title="RSD" href="../../xmlrpc.php?rsd">
+<meta name="generator" content="WordPress 6.7.1">
+<meta name="generator" content="WooCommerce 9.5.2">
+<link rel="canonical" href="index.htm">
+<link rel='shortlink' href='index.htm?p=5836'>
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="../../wp-json/oembed/1.0/embed-32?url=https%3A%2F%2Fdemo-themewinter.com%2Fcourselog%2Fwoo-courselog%2Fproduct%2Fprocessing-streaming-data-using-apache-flank%2F">
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="../../wp-json/oembed/1.0/embed-33?url=https%3A%2F%2Fdemo-themewinter.com%2Fcourselog%2Fwoo-courselog%2Fproduct%2Fprocessing-streaming-data-using-apache-flank%2F&#038;format=xml">
+        <div id="preloader">
+			                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+			            <div class="preloader-cancel-btn-wraper">
+                <span class="btn btn-primary preloader-cancel-btn">Cancel Preloader</span>
+            </div>
+        </div>
+			<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<meta name="generator" content="Elementor 3.26.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-auto">
+
+			<script type="text/javascript">
+				var elementskit_module_parallax_url = "https://demo-themewinter.com/courselog/woo-courselog/wp-content/plugins/courselog-essential/modules/parallax/"
+			</script>
+		<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<style class='wp-fonts-local' type='text/css'>
+@font-face{font-family:Inter;font-style:normal;font-weight:300 900;font-display:fallback;src:url('../../wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2') format('woff2');font-stretch:normal;}
+@font-face{font-family:Cardo;font-style:normal;font-weight:400;font-display:fallback;src:url('../../wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2') format('woff2');}
+</style>
+<link rel="icon" href="../../wp-content/uploads/sites/2/2023/11/fav_icon.png" sizes="32x32">
+<link rel="icon" href="../../wp-content/uploads/sites/2/2023/11/fav_icon.png" sizes="192x192">
+<link rel="apple-touch-icon" href="../../wp-content/uploads/sites/2/2023/11/fav_icon.png">
+<meta name="msapplication-TileImage" content="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2023/11/fav_icon.png">
+		<style type="text/css" id="wp-custom-css">
+			.header-2 .woo-header-search,
+.header-2 .category-menu{
+	display: none;
+}
+.header-2 .category-menu .elementskit-navbar-nav-default .elementskit-navbar-nav > li > a::before{
+	display: none;
+}
+
+@media (min-width: 1600px){
+	
+	.header-2 .col-left{
+		width: 60% !important;
+	}
+	.header-2 .col-right{
+		width: 40% !important;
+	}
+}
+
+@media (min-width: 1920px){
+	.header-2 .category-menu{
+		display: block;
+	}
+	.header-2 .woo-header-search{
+		display: block;
+	}
+	.header-2 .col-left{
+		width: 70%;
+	}
+	.header-2 .col-right{
+		width: 30%;
+	}
+}
+.woo-xs-content article{
+	box-shadow:none;
+	background: transparent;
+	padding: 0;
+}
+.woocommerce a.remove{
+	margin: 0 auto;
+}
+#add_payment_method table.cart img, .woocommerce-cart table.cart img, .woocommerce-checkout table.cart img{
+	width: 100px;
+}
+.woocommerce table.shop_table > thead > tr > th{
+	border-color: #e0dde04a;
+}
+.woocommerce-page table.cart td.actions{
+	padding:30px;
+}
+.xs-ratting-content.woo-rate{
+	margin-top:30px;
+}
+.single-product-box .course-price{
+	display: flex;
+    flex-direction: column;
+}
+.single-course .course-thumb .course-price-item .course-price{
+	line-height:22px;
+}
+.single-course .course-thumb .course-price-item .course-price del .woocommerce-Price-amount{
+	    font-size: 15px;
+    opacity: 80%;
+}		</style>
+		</head>
+<body class="product-template-default single single-product postid-5836 theme-courselog woocommerce woocommerce-page woocommerce-no-js sidebar-inactive elementor-default elementor-kit-573">
+<div class="ekit-template-content-markup ekit-template-content-header ekit-template-content-theme-support">
+		<div data-elementor-type="wp-post" data-elementor-id="6396" class="elementor elementor-6396">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-70988c2 elementor-section-full_width elementor-section-height-default elementor-section-height-default" data-id="70988c2" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-37c861f" data-id="37c861f" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-19a326b top-header-text elementor-widget elementor-widget-text-editor" data-id="19a326b" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									New members: get your first 7 days of Courselog Premium for free! <a class="focus-title" href="#">Unlock your discount now!</a>								</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-2982480" data-id="2982480" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a296652 elementor-widget elementor-widget-elementskit-social-media" data-id="a296652" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-social-media.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">			 <ul class="ekit_social_media">
+														<li class="elementor-repeater-item-0745300">
+					    <a href="https://facebook.com" aria-label="Facebook" class="facebook">
+														
+							<i aria-hidden="true" class="icon icon-facebook"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-b5cd8a5">
+					    <a href="https://facebook.com" aria-label="Instagram" class="1">
+														
+							<i aria-hidden="true" class="icon icon-instagram-1"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-091b604">
+					    <a href="https://facebook.com" aria-label="LinkedIn" class="linkedin">
+														
+							<i aria-hidden="true" class="icon icon-linkedin"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-9cd60b5">
+					    <a href="https://facebook.com" aria-label="Twitter" class="twitter">
+														
+							<i aria-hidden="true" class="icon icon-twitter"></i>									
+                                                                                                            </a>
+                    </li>
+                    							</ul>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-top-section elementor-element elementor-element-3d02a0e elementor-section-full_width cl-main-header elementor-section-content-middle elementor-section-height-default elementor-section-height-default" data-id="3d02a0e" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-382f180" data-id="382f180" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-ac4a4b5 elementor-widget__width-auto elementor-widget elementor-widget-courselog-logo" data-id="ac4a4b5" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="courselog-logo.default">
+				<div class="elementor-widget-container">
+					    <div class="courselog-widget-logo">
+        <a href="../../index.htm">
+            <img src="../../wp-content/uploads/sites/2/2021/01/logo_black.png" alt="Woo Courselog">
+        </a>
+    </div>
+
+    				</div>
+				</div>
+				<div class="elementor-element elementor-element-d3af387 woo-header-search elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-wp-widget-woocommerce_product_search" data-id="d3af387" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="wp-widget-woocommerce_product_search.default">
+				<div class="elementor-widget-container">
+					<form role="search" method="get" class="woocommerce-product-search" action="https://demo-themewinter.com/courselog/woo-courselog/">
+	<label class="screen-reader-text" for="woocommerce-product-search-field-0">Search for:</label>
+	<input type="search" id="woocommerce-product-search-field-0" class="search-field" placeholder="Search products&hellip;" value="" name="s">
+	<button type="submit" value="Search" class="">Search</button>
+	<input type="hidden" name="post_type" value="product">
+</form>
+				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-top-column elementor-element elementor-element-77521b9 hide-search-and-button" data-id="77521b9" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-1716d70 elementor-widget__width-auto ts-color-nav elementor-widget elementor-widget-ekit-nav-menu" data-id="1716d70" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="ekit-nav-menu.default">
+				<div class="elementor-widget-container">
+							<nav class="ekit-wid-con ekit_menu_responsive_tablet" data-hamburger-icon="icon icon-menu-9" data-hamburger-icon-type="icon" data-responsive-breakpoint="1024">
+			            <button class="elementskit-menu-hamburger elementskit-menu-toggler" type="button" aria-label="hamburger-icon">
+                <i aria-hidden="true" class="ekit-menu-icon icon icon-menu-9"></i>            </button>
+            <div id="ekit-megamenu-main-menu" class="elementskit-menu-container elementskit-menu-offcanvas-elements elementskit-navbar-nav-default ekit-nav-menu-one-page- ekit-nav-dropdown-hover"><ul id="menu-main-menu" class="elementskit-navbar-nav elementskit-menu-po-center submenu-click-on-icon"><li id="menu-item-6443" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-has-children menu-item-6443 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../index.htm" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Home<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-6442" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-6442 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../index.htm" class=" dropdown-item">Home Woo One</a>	<li id="menu-item-11" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../home-two/index.htm" class=" dropdown-item">Home Woo Two</a>	<li id="menu-item-7037" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7037 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../../index.htm" class=" dropdown-item">Home Learnpress One</a>	<li id="menu-item-7038" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7038 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../../home-two/index.htm" class=" dropdown-item">Home Learnpress Two</a>	<li id="menu-item-7039" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-7039 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../../home-three/index.htm" class=" dropdown-item">Home Learnpress Three</a></li></ul>
+</li>
+<li id="menu-item-1027" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-1027 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="#" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Pages<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-10" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../about/index.htm" class=" dropdown-item">About</a>	<li id="menu-item-898" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-898 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../instructor/index.htm" class=" dropdown-item">Instructor</a>	<li id="menu-item-4232" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4232 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../become-an-instructor/index.htm" class=" dropdown-item">Become an instructor</a>	<li id="menu-item-5967" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5967 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../pricing/index.htm" class=" dropdown-item">Pricing Style 1</a>	<li id="menu-item-900" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-900 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../pricing-2/index.htm" class=" dropdown-item">Pricing Style 2</a>	<li id="menu-item-4233" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4233 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../faqs/index.htm" class=" dropdown-item">FAQs</a>	<li id="menu-item-899" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-899 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../contact/index.htm" class=" dropdown-item">Contact Style 1</a>	<li id="menu-item-5966" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5966 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../contact-two/index.htm" class=" dropdown-item">Contact Style 2</a>	<li id="menu-item-4245" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-4245 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="https://demo-themewinter.com/courselog/woo-courselog/404/" class=" dropdown-item">404</a></li></ul>
+</li>
+<li id="menu-item-1322" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1322 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../courses/index.htm" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Courses<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-5973" class="menu-item menu-item-type-post_type menu-item-object-page current_page_parent menu-item-5973 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../shop/index.htm" class=" dropdown-item">Course</a>	<li id="menu-item-5969" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5969 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../cart/index.htm" class=" dropdown-item">Cart</a>	<li id="menu-item-5970" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5970 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../cart/index.htm" class=" dropdown-item">Checkout</a></li></ul>
+</li>
+<li id="menu-item-1359" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1359 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../blog/index.htm" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Blog<i class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
+<ul class="elementskit-dropdown elementskit-submenu-panel">
+	<li id="menu-item-923" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-923 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../blog/index.htm" class=" dropdown-item">Blog</a>	<li id="menu-item-1358" class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1358 nav-item elementskit-mobile-builder-content" data-vertical-menu="750px"><a href="../../learn-by-doing-with-real-world-projects-done/index.htm" class=" dropdown-item">Blog Details</a></li></ul>
+</li>
+</ul><div class="elementskit-nav-identity-panel"><a class="elementskit-nav-logo" href="../../index.htm" target="" rel=""><img src="../../wp-content/uploads/sites/2/2021/01/logo_black.png" title="logo_black.png" alt="logo_black.png" decoding="async"></a><button class="elementskit-menu-close elementskit-menu-toggler" type="button">X</button></div></div>			
+			<div class="elementskit-menu-overlay elementskit-menu-offcanvas-elements elementskit-menu-toggler ekit-nav-menu--overlay"></div>        </nav>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-69ac90e elementor-widget__width-auto elementor-widget elementor-widget-courselog-cartbtn" data-id="69ac90e" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="courselog-cartbtn.default">
+				<div class="elementor-widget-container">
+								<div class="cartbtn">
+				<div class="cart-link">
+					<a class="cart-contents" href="../../checkout/index.htm">
+						<i aria-hidden="true" class="tsicon tsicon-cart"></i>					</a>
+					<sup>0</sup>
+				</div>
+			</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-1a2115a elementor-align-left elementor-widget__width-auto elementor-hidden-tablet elementor-hidden-phone elementor-widget elementor-widget-elementskit-button" data-id="1a2115a" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-button.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">		<div class="ekit-btn-wraper">
+							<a href="#" class="elementskit-btn  whitespace--normal" id="">
+					Try for free<i class="fas fa-arrow-right"></i>				</a>
+					</div>
+        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e5919cf elementor-widget__width-auto elementor-widget elementor-widget-courselog-userlogin" data-id="e5919cf" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="courselog-userlogin.default">
+				<div class="elementor-widget-container">
+					
+
+	<div class="login-user">
+		
+			<a href="../../my-account/index.htm">
+				<i aria-hidden="true" class="fas fa-user-alt"></i>
+							</a>
+			   </div>
+				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+<section id="main-content" class="blog main-container" role="main">
+	<div class="container">
+		<div class="row">
+		
+			<div id="content" class="col-md-12">
+				<div class="main-content-inner wooshop clearfix">
+											<div class="woocommerce-notices-wrapper">
+	<div class="woocommerce-message" role="alert">
+		&ldquo;Competitive strategy law and organization&rdquo; has been added to your cart. <a href="../../cart/index.htm" class="button wc-forward">View cart</a>	</div>
+	<div class="woocommerce-message" role="alert">
+		&ldquo;Competitive strategy law and organization&rdquo; has been added to your cart. <a href="../../cart/index.htm" class="button wc-forward">View cart</a>	</div>
+</div><div id="product-5836" class="product type-product post-5836 status-publish first instock product_cat-computer-science product_cat-design-architect product_cat-mathematics product_tag-new product_tag-popular has-post-thumbnail virtual product-type-simple">
+	<div class="row">
+	<div class="col-md-6">
+	<div class="woocommerce-product-gallery woocommerce-product-gallery--with-images woocommerce-product-gallery--columns-3 images" data-columns="3" style="opacity: 0; transition: opacity .25s ease-in-out;">
+	<div class="woocommerce-product-gallery__wrapper">
+		<div data-thumb="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image2-300x300.jpg" data-thumb-alt="Processing streaming data using apache flank" data-thumb-srcset="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image2-300x300.jpg 300w, https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image2-150x150.jpg 150w" data-thumb-sizes="(max-width: 300px) 100vw, 300px" class="woocommerce-product-gallery__image"><a href="../../wp-content/uploads/sites/2/2021/01/course_image2.jpg"><img fetchpriority="high" width="600" height="360" src="../../wp-content/uploads/sites/2/2021/01/course_image2-600x360.jpg" class="wp-post-image" alt="Processing streaming data using apache flank" data-caption="" data-src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image2.jpg" data-large_image="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image2.jpg" data-large_image_width="730" data-large_image_height="438" decoding="async" srcset="../../wp-content/uploads/sites/2/2021/01/course_image2-600x360.jpg 600w, ../../wp-content/uploads/sites/2/2021/01/course_image2.jpg 730w" sizes="(max-width: 600px) 100vw, 600px"></a></div><div data-thumb="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image3-300x300.jpg" data-thumb-alt="Processing streaming data using apache flank - Image 2" data-thumb-srcset="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image3-300x300.jpg 300w, https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image3-150x150.jpg 150w" data-thumb-sizes="(max-width: 300px) 100vw, 300px" class="woocommerce-product-gallery__image"><a href="../../wp-content/uploads/sites/2/2021/01/course_image3.jpg"><img width="600" height="360" src="../../wp-content/uploads/sites/2/2021/01/course_image3-600x360.jpg" class="" alt="Processing streaming data using apache flank - Image 2" data-caption="" data-src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image3.jpg" data-large_image="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image3.jpg" data-large_image_width="730" data-large_image_height="438" decoding="async" srcset="../../wp-content/uploads/sites/2/2021/01/course_image3-600x360.jpg 600w, ../../wp-content/uploads/sites/2/2021/01/course_image3.jpg 730w" sizes="(max-width: 600px) 100vw, 600px"></a></div><div data-thumb="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image4-300x300.jpg" data-thumb-alt="Processing streaming data using apache flank - Image 3" data-thumb-srcset="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image4-300x300.jpg 300w, https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image4-150x150.jpg 150w" data-thumb-sizes="(max-width: 300px) 100vw, 300px" class="woocommerce-product-gallery__image"><a href="../../wp-content/uploads/sites/2/2021/01/course_image4.jpg"><img width="600" height="360" src="../../wp-content/uploads/sites/2/2021/01/course_image4-600x360.jpg" class="" alt="Processing streaming data using apache flank - Image 3" data-caption="" data-src="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image4.jpg" data-large_image="https://demo-themewinter.com/courselog/woo-courselog/wp-content/uploads/sites/2/2021/01/course_image4.jpg" data-large_image_width="730" data-large_image_height="438" decoding="async" srcset="../../wp-content/uploads/sites/2/2021/01/course_image4-600x360.jpg 600w, ../../wp-content/uploads/sites/2/2021/01/course_image4.jpg 730w" sizes="(max-width: 600px) 100vw, 600px"></a></div>	</div>
+</div>
+	</div>
+
+	<div class="col-md-6">
+		<div class="product-single-description">
+			<h1 class="product_title entry-title">Processing streaming data using apache flank</h1><p class="price"></p>
+<div class="woocommerce-product-details__short-description">
+	<p>Our practical projects will allow you<br>
+to get started portfolio.</p>
+</div>
+<div class="product_meta">
+
+			<ul class="product-meta-list">
+			<li><span class="label-span">Categories:</span></li>
+							<li><a href="../../product-category/computer-science/index.htm">Computer Science<span>,</span></a></li>
+								<li><a href="../../product-category/design-architect/index.htm">Design Architect<span>,</span></a></li>
+								<li><a href="../../product-category/mathematics/index.htm">Mathematics<span>,</span></a></li>
+						</ul>
+			<ul class="product-meta-list">
+			<li><span class="label-span">Tags:</span></li>
+							<li><a href="../../product-tag/new/index.htm">new<span>,</span></a></li>
+								<li><a href="../../product-tag/popular/index.htm">popular<span>,</span></a></li>
+						</ul>
+	
+</div>
+	<div class="meta-block social-share">
+					<span class="label-span">Share:</span>
+			
+    <div class="xs_social_share_widget xs_share_url  		main_content  wslu-style-1 wslu-share-box-shaped wslu-fill-colored wslu-none wslu-share-horizontal wslu-theme-font-no wslu-main_content">
+
+		
+        <ul>
+			        </ul>
+    </div> 
+	</div>
+			</div>
+	</div>
+
+	
+	<div class="woocommerce-tabs wc-tabs-wrapper">
+		<ul class="tabs wc-tabs" role="tablist">
+							<li class="description_tab" id="tab-title-description" role="tab" aria-controls="tab-description">
+					<a href="#tab-description">
+						Description					</a>
+				</li>
+							<li class="additional_information_tab" id="tab-title-additional_information" role="tab" aria-controls="tab-additional_information">
+					<a href="#tab-additional_information">
+						Additional information					</a>
+				</li>
+							<li class="reviews_tab" id="tab-title-reviews" role="tab" aria-controls="tab-reviews">
+					<a href="#tab-reviews">
+						Reviews (0)					</a>
+				</li>
+					</ul>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--description panel entry-content wc-tab" id="tab-description" role="tabpanel" aria-labelledby="tab-title-description">
+				
+	<h2>Description</h2>
+
+<p>You’ll learn how to build a Kubernetes cluster, and how to deploy and manage applications on it. Along the way, you’ll learn the internals of how<br>
+Kubernetes works, as well as best-practices such as managing applications declaratively. By the end of the course, you’ll have all the tools<br>
+you need to get started with Kubernetes and take your career to the next level.</p>
+<p><iframe title="Super Trofeo [4K]" width="800" height="450" src="https://www.youtube.com/embed/YAWt-gktZqM?feature=oembed" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe></p>
+<p>This Course Includes</p>
+<ul>
+<li>51 Sample Images</li>
+<li>Beginner’s Guide PDF</li>
+<li>Sharpen Photoshop Action</li>
+<li>Skin Retouch Photoshop Action</li>
+</ul>
+<p>You’ll learn the internals of how Kubernetes works, as well as best-practices such as managing applications declaratively. By the end of the course you’ll<br>
+have all the tools you need to get started with Kubernetes and take your career to the next level. How to deploy and manage applications on it. you need<br>
+to get started with Kubernetes and take your career to the next level</p>
+
+    <div class="xs_social_share_widget xs_share_url after_content 		main_content  wslu-style-1 wslu-share-box-shaped wslu-fill-colored wslu-none wslu-share-horizontal wslu-theme-font-no wslu-main_content">
+
+		
+        <ul>
+			        </ul>
+    </div> 
+			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--additional_information panel entry-content wc-tab" id="tab-additional_information" role="tabpanel" aria-labelledby="tab-title-additional_information">
+				
+	<h2>Additional information</h2>
+
+<table class="woocommerce-product-attributes shop_attributes" aria-label="Product Details">
+			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_course-level">
+			<th class="woocommerce-product-attributes-item__label" scope="row">Course Level</th>
+			<td class="woocommerce-product-attributes-item__value"><p>Intermediate</p>
+</td>
+		</tr>
+			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_course-duration">
+			<th class="woocommerce-product-attributes-item__label" scope="row">Course duration</th>
+			<td class="woocommerce-product-attributes-item__value"><p>3 Weeks</p>
+</td>
+		</tr>
+			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_lessons">
+			<th class="woocommerce-product-attributes-item__label" scope="row">Lessons</th>
+			<td class="woocommerce-product-attributes-item__value"><p>40</p>
+</td>
+		</tr>
+			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_certificate">
+			<th class="woocommerce-product-attributes-item__label" scope="row">Certificate</th>
+			<td class="woocommerce-product-attributes-item__value"><p>Available</p>
+</td>
+		</tr>
+			<tr class="woocommerce-product-attributes-item woocommerce-product-attributes-item--attribute_pa_language">
+			<th class="woocommerce-product-attributes-item__label" scope="row">Language</th>
+			<td class="woocommerce-product-attributes-item__value"><p>English, France</p>
+</td>
+		</tr>
+	</table>
+			</div>
+					<div class="woocommerce-Tabs-panel woocommerce-Tabs-panel--reviews panel entry-content wc-tab" id="tab-reviews" role="tabpanel" aria-labelledby="tab-title-reviews">
+				<div id="reviews" class="woocommerce-Reviews">
+	<div id="comments">
+		<h2 class="woocommerce-Reviews-title">
+			Reviews		</h2>
+
+					<p class="woocommerce-noreviews">There are no reviews yet.</p>
+			</div>
+
+			<div id="review_form_wrapper">
+			<div id="review_form">
+					<div id="respond" class="comment-respond">
+		<span id="reply-title" class="comment-reply-title">Be the first to review &ldquo;Processing streaming data using apache flank&rdquo; <small><a rel="nofollow" id="cancel-comment-reply-link" href="index-1.htm?add-to-cart=5837#respond" style="display:none;">Cancel reply</a></small></span><form action="https://demo-themewinter.com/courselog/woo-courselog/wp-comments-post.php" method="post" id="commentform" class="comment-form" novalidate=""><p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> <span class="required-field-message">Required fields are marked <span class="required">*</span></span></p><p class="comment-form-author"><label for="author">Name&nbsp;<span class="required">*</span></label><input id="author" name="author" type="text" value="" size="30" required=""></p>
+<p class="comment-form-email"><label for="email">Email&nbsp;<span class="required">*</span></label><input id="email" name="email" type="email" value="" size="30" required=""></p>
+<p class="comment-form-cookies-consent"><input id="wp-comment-cookies-consent" name="wp-comment-cookies-consent" type="checkbox" value="yes"> <label for="wp-comment-cookies-consent">Save my name, email, and website in this browser for the next time I comment.</label></p>
+<div class="comment-form-rating"><label for="rating">Your rating&nbsp;<span class="required">*</span></label><select name="rating" id="rating" required="">
+						<option value="">Rate&hellip;</option>
+						<option value="5">Perfect</option>
+						<option value="4">Good</option>
+						<option value="3">Average</option>
+						<option value="2">Not that bad</option>
+						<option value="1">Very poor</option>
+					</select></div><p class="comment-form-comment"><label for="comment">Your review&nbsp;<span class="required">*</span></label><textarea id="comment" name="comment" cols="45" rows="8" required=""></textarea></p><p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Submit"> <input type='hidden' name='comment_post_ID' value='5836' id='comment_post_ID'>
+<input type='hidden' name='comment_parent' id='comment_parent' value='0'>
+</p></form>	</div><!-- #respond -->
+				</div>
+		</div>
+	
+	<div class="clear"></div>
+</div>
+			</div>
+		
+			</div>
+
+
+	<section class="related products">
+
+					<h2>Related products</h2>
+				
+		<div class="products">
+<div class="row">
+			
+					<div class="col-lg-4">
+	<div class="product type-product post-5837 status-publish first instock product_cat-computer-science product_cat-design-architect product_cat-education product_cat-foreign-language product_cat-mathematics product_tag-new product_tag-popular has-post-thumbnail virtual purchasable product-type-simple">
+			<div class="single-course">
+		<div class="single-course-wrap">
+			<div class="course-thumb">
+				<img class="img-fluid" src="../../wp-content/uploads/sites/2/2021/01/course_image3.jpg" alt="Competitive strategy law and organization">
+				<div class="course-price-item">
+											<span class="course-price">							
+							<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>300</span>						</span>
+									</div><!-- ./ price -->
+				
+				<div class="meta-list">
+												
+								<a href="../../product-tag/new/index.htm">new</a>
+															
+								<a href="../../product-tag/popular/index.htm">popular</a>
+												
+									</div><!-- ./meta-list -->
+
+			</div>
+
+
+			<div class="content-area">
+				<h3 class="ts-course-el-title"> 
+					<a href="../competitive-strategy-law-and-organization/index.htm">
+						Competitive strategy law and organization 
+					</a>	
+				</h3>
+				<div class="author-area">
+					Our practical projects will allow you
+to get started portfolio.				</div>
+				<div class="course-footer">
+					<div class="lession-and-rating">
+						<div class="lessons">
+							<a href="index-1.htm?add-to-cart=5837" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="5837" data-product_sku="" aria-label="Add to cart: &ldquo;Competitive strategy law and organization&rdquo;" rel="nofollow">Buy Now</a>						</div><!-- ./lesson -->
+						
+													<div class="xs-ratting-content woo-rate star-0">
+								<span><i class="far fa-star"></i>0.0</span>
+							</div>
+							
+					</div>
+				</div><!-- ./course-footer -->
+			</div>
+		</div>
+	</div>
+		</div>
+</div>
+			
+					<div class="col-lg-4">
+	<div class="product type-product post-5838 status-publish instock product_cat-computer-science product_cat-engineering product_cat-foreign-language product_tag-new product_tag-popular has-post-thumbnail virtual purchasable product-type-simple">
+			<div class="single-course">
+		<div class="single-course-wrap">
+			<div class="course-thumb">
+				<img class="img-fluid" src="../../wp-content/uploads/sites/2/2021/01/course_image4.jpg" alt="Fundamentals of music theory learn new">
+				<div class="course-price-item">
+											<span class="course-price">							
+							<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>300</span>						</span>
+									</div><!-- ./ price -->
+				
+				<div class="meta-list">
+												
+								<a href="../../product-tag/new/index.htm">new</a>
+															
+								<a href="../../product-tag/popular/index.htm">popular</a>
+												
+									</div><!-- ./meta-list -->
+
+			</div>
+
+
+			<div class="content-area">
+				<h3 class="ts-course-el-title"> 
+					<a href="../achieving-advanced-in-insights-with-big/index.htm">
+						Fundamentals of music theory learn new 
+					</a>	
+				</h3>
+				<div class="author-area">
+					Our practical projects will allow you
+to get started portfolio.				</div>
+				<div class="course-footer">
+					<div class="lession-and-rating">
+						<div class="lessons">
+							<a href="index-3.htm?add-to-cart=5838" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="5838" data-product_sku="" aria-label="Add to cart: &ldquo;Fundamentals of music theory learn new&rdquo;" rel="nofollow">Buy Now</a>						</div><!-- ./lesson -->
+						
+													<div class="xs-ratting-content woo-rate">
+								<span><i class="fas fa-star"></i>5.00</span>
+							</div>						
+							
+					</div>
+				</div><!-- ./course-footer -->
+			</div>
+		</div>
+	</div>
+		</div>
+</div>
+			
+					<div class="col-lg-4">
+	<div class="product type-product post-5845 status-publish last instock product_cat-data-science product_cat-engineering product_cat-foreign-language product_tag-new product_tag-popular has-post-thumbnail virtual purchasable product-type-simple">
+			<div class="single-course">
+		<div class="single-course-wrap">
+			<div class="course-thumb">
+				<img class="img-fluid" src="../../wp-content/uploads/sites/2/2021/01/course_image1.jpg" alt="PMP Exam prep seminar &#8211; pass the PMP on your">
+				<div class="course-price-item">
+											<span class="course-price">							
+							<span class="woocommerce-Price-amount amount"><span class="woocommerce-Price-currencySymbol">&#036;</span>50</span>						</span>
+									</div><!-- ./ price -->
+				
+				<div class="meta-list">
+												
+								<a href="../../product-tag/new/index.htm">new</a>
+															
+								<a href="../../product-tag/popular/index.htm">popular</a>
+												
+									</div><!-- ./meta-list -->
+
+			</div>
+
+
+			<div class="content-area">
+				<h3 class="ts-course-el-title"> 
+					<a href="../pmp-exam-prep-seminar-pass-the-pmp-on-your-first-attempt/index.htm">
+						PMP Exam prep seminar &#8211; pass the PMP on your 
+					</a>	
+				</h3>
+				<div class="author-area">
+					You’ll learn how to build a Kubernetes cluster, and how to deploy				</div>
+				<div class="course-footer">
+					<div class="lession-and-rating">
+						<div class="lessons">
+							<a href="index-2.htm?add-to-cart=5845" data-quantity="1" class="button product_type_simple add_to_cart_button ajax_add_to_cart" data-product_id="5845" data-product_sku="" aria-label="Add to cart: &ldquo;PMP Exam prep seminar - pass the PMP on your&rdquo;" rel="nofollow">Buy Now</a>						</div><!-- ./lesson -->
+						
+													<div class="xs-ratting-content woo-rate star-0">
+								<span><i class="far fa-star"></i>0.0</span>
+							</div>
+							
+					</div>
+				</div><!-- ./course-footer -->
+			</div>
+		</div>
+	</div>
+		</div>
+</div>
+			
+		</div>
+</div>
+
+	</section>
+		</div>
+</div>
+
+									</div> <!-- close .col-sm-12 -->
+			</div><!--/.content -->
+			
+		</div><!--/.row -->
+	</div><!--/.row -->
+</section><!--/.row -->
+
+
+<div class="ekit-template-content-markup ekit-template-content-footer ekit-template-content-theme-support">
+		<div data-elementor-type="wp-post" data-elementor-id="6467" class="elementor elementor-6467">
+						<section class="elementor-section elementor-top-section elementor-element elementor-element-a842067 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="a842067" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-b86816a" data-id="b86816a" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<section class="elementor-section elementor-inner-section elementor-element elementor-element-077da22 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="077da22" data-element_type="section" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+							<div class="elementor-background-overlay"></div>
+							<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-18eeb74" data-id="18eeb74" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-a1f2817 elementor-widget elementor-widget-elementskit-heading" data-id="a1f2817" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con"><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Want Us to Email you About Special Offers &amp; Updates?</h2></div></div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-81e6d87" data-id="81e6d87" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-4282f2c elementor-widget elementor-widget-metform" data-id="4282f2c" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="metform.default">
+				<div class="elementor-widget-container">
+					<div id="mf-response-props-id-356" data-previous-steps-style="" data-editswitchopen="" data-response_type="alert" data-erroricon="fas fa-exclamation-triangle" data-successicon="fas fa-check" data-messageposition="top" class="   mf-scroll-top-no">
+		<div class="formpicker_warper formpicker_warper_editable" data-metform-formpicker-key="356">
+				
+			<div class="elementor-widget-container">
+				
+		<div id="metform-wrap-4282f2c-356" class="mf-form-wrapper" data-form-id="356" data-action="https://demo-themewinter.com/courselog/woo-courselog/wp-json/metform/v1/entries/insert/356" data-wp-nonce="3b5006f705" data-form-nonce="629797ce7d" data-quiz-summery="false" data-save-progress="false" data-form-type="contact_form" data-stop-vertical-effect=""></div>
+
+
+		<!----------------------------- 
+			* controls_data : find the the props passed indie of data attribute
+			* props.SubmitResponseMarkup : contains the markup of error or success message
+			* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals
+		--------------------------- -->
+
+				<script type="text/mf" class="mf-template">
+			function controls_data (value){
+				let currentWrapper = "mf-response-props-id-356";
+				let currentEl = document.getElementById(currentWrapper);
+				
+				return currentEl ? currentEl.dataset[value] : false
+			}
+
+
+			let is_edit_mode = '' ? true : false;
+			let message_position = controls_data('messageposition') || 'top';
+
+			
+			let message_successIcon = controls_data('successicon') || '';
+			let message_errorIcon = controls_data('erroricon') || '';
+			let message_editSwitch = controls_data('editswitchopen') === 'yes' ? true : false;
+			let message_proClass = controls_data('editswitchopen') === 'yes' ? 'mf_pro_activated' : '';
+			
+			let is_dummy_markup = is_edit_mode && message_editSwitch ? true : false;
+
+			
+			return html`
+				<form
+					className="metform-form-content"
+					ref=${parent.formContainerRef}
+					onSubmit=${ validation.handleSubmit( parent.handleFormSubmit ) }
+				
+					>
+			
+			
+					${is_dummy_markup ? message_position === 'top' ?  props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' :  message_position === 'top' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+
+					<!--------------------------------------------------------
+					*** IMPORTANT / DANGEROUS ***
+					${html``} must be used as in immediate child of "metform-form-main-wrapper"
+					class otherwise multistep form will not run at all
+					---------------------------------------------------------->
+
+					<div className="metform-form-main-wrapper" key=${'hide-form-after-submit'} ref=${parent.formRef}>
+					${html`
+								<div data-elementor-type="wp-post" key="2" data-elementor-id="356" className="elementor elementor-356">
+						<section className="elementor-section elementor-top-section elementor-element elementor-element-5903207 elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="5903207" data-element_type="section">
+						<div className="elementor-container elementor-column-gap-default">
+					<div className="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-66a1a42" data-id="66a1a42" data-element_type="column">
+			<div className="elementor-widget-wrap elementor-element-populated">
+						<div className="elementor-element elementor-element-a6957d6 elementor-widget elementor-widget-mf-email" data-id="a6957d6" data-element_type="widget" data-settings="{&quot;mf_input_name&quot;:&quot;mf-email&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="mf-email.default">
+				<div className="elementor-widget-container">
+					
+		<div className="mf-input-wrapper">
+			
+			<input 
+				type="email" 
+				 
+				defaultValue="" 
+				className="mf-input " 
+				id="mf-input-email-a6957d6" 
+				name="mf-email" 
+				placeholder="${ parent.decodeEntities(`Enter your email`) } " 
+				 
+				onBlur=${parent.handleChange} onFocus=${parent.handleChange} aria-invalid=${validation.errors['mf-email'] ? 'true' : 'false' } 
+				ref=${el=> parent.activateValidation({"message":"Something went wrong.","emailMessage":"Please enter a valid Email address","minLength":1,"maxLength":"","type":"none","required":true,"expression":"null"}, el)}
+							/>
+
+						<${validation.ErrorMessage} 
+				errors=${validation.errors} 
+				name="mf-email" 
+				as=${html`<span className="mf-error-message"></span>`}
+			/>
+			
+					</div>
+
+				</div>
+				</div>
+				<div className="elementor-element elementor-element-504a691 mf-btn--left elementor-widget__width-auto elementor-absolute elementor-widget elementor-widget-mf-button" data-id="504a691" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="mf-button.default">
+				<div className="elementor-widget-container">
+							<div className="mf-btn-wraper " data-mf-form-conditional-logic-requirement="">
+							<button type="submit" className="metform-btn metform-submit-btn " id="">
+					<span>${ parent.decodeEntities(`Subscribe`) } </span>
+					<i aria-hidden="true" className="tsicon tsicon-right_arrow"></i>				</button>
+			        </div>
+        				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+							`}
+					</div>
+
+					${is_dummy_markup ? message_position === 'bottom' ? props.ResponseDummyMarkup(message_successIcon, message_proClass) : '' : ''}
+					${is_dummy_markup ? ' ' : message_position === 'bottom' ? props.SubmitResponseMarkup`${parent}${state}${message_successIcon}${message_errorIcon}${message_proClass}` : ''}
+				
+				</form>
+			`
+		</script>
+
+					</div>
+		</div>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-2cdb19d elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="2cdb19d" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-c9b8194" data-id="c9b8194" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-c8dbe25 elementor-widget elementor-widget-elementskit-heading" data-id="c8dbe25" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con"><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Company</h2></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9d72f73 elementor-widget elementor-widget-elementskit-page-list" data-id="9d72f73" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-page-list.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">		<div class="elementor-icon-list-items ">
+							<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-dfeaf53 ekit_badge_left" href="../../about/index.htm">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">About</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-4e82425 ekit_badge_left" href="../../pricing-2/index.htm">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Pricing</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-51cc0a7 ekit_badge_left" href="../../blog/index.htm">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Blog</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-e04c183 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Careers</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-9328844 ekit_badge_left" href="../../contact/index.htm">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Contact</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+						</div>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-8fcad9b" data-id="8fcad9b" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-55636a8 elementor-widget elementor-widget-elementskit-heading" data-id="55636a8" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con"><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Platform</h2></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-bb9506c elementor-widget elementor-widget-elementskit-page-list" data-id="bb9506c" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-page-list.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">		<div class="elementor-icon-list-items ">
+							<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-dfeaf53 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Browse library</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-4e82425 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Role IQ</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-51cc0a7 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Skill IQ</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-e04c183 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Partner Program</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-9328844 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Authors</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+						</div>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-e838280 ts-footer-border" data-id="e838280" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-f94b215 elementor-widget elementor-widget-elementskit-heading" data-id="f94b215" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con"><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Resources</h2></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-aa20877 elementor-widget elementor-widget-elementskit-page-list" data-id="aa20877" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-page-list.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">		<div class="elementor-icon-list-items ">
+							<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-dfeaf53 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Library</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-4e82425 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Guides</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-51cc0a7 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Tutorials</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-e04c183 ekit_badge_left" href="../../faqs/index.htm">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">FAQs</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+						</div>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-25 elementor-inner-column elementor-element elementor-element-1144d08" data-id="1144d08" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-cc6c18e elementor-widget elementor-widget-elementskit-heading" data-id="cc6c18e" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-heading.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con"><div class="ekit-heading elementskit-section-title-wraper text_left   ekit_heading_tablet-   ekit_heading_mobile-"><h2 class="ekit-heading--title elementskit-section-title ">Get in touch</h2></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5cf65b0 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="5cf65b0" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">        <!-- link opening -->
+                <!-- end link opening -->
+
+        <div class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media  ">
+                    <div class="elementskit-box-header elementor-animation-">
+                <div class="elementskit-info-box-icon  text-center">
+                    <i aria-hidden="true" class="elementkit-infobox-icon fas fa-map-marker-alt"></i>
+                </div>
+          </div>
+                        <div class="box-body">
+                        		  <p>500 Treat Ave, Suite 200 <br>
+San Francisco, CA 94110</p>
+                                </div>
+        
+        
+                </div>
+        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-bbda025 ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="bbda025" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">        <!-- link opening -->
+                <!-- end link opening -->
+
+        <div class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media  ">
+                    <div class="elementskit-box-header elementor-animation-">
+                <div class="elementskit-info-box-icon  text-center">
+                    <i aria-hidden="true" class="elementkit-infobox-icon tsicon tsicon-ts-phone-icon2"></i>
+                </div>
+          </div>
+                        <div class="box-body">
+                        		  <p>1-702-800-2690 (Support)</p>
+                                </div>
+        
+        
+                </div>
+        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-18bfa5f ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="18bfa5f" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-icon-box.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">        <!-- link opening -->
+                <!-- end link opening -->
+
+        <div class="elementskit-infobox text- text-left icon-lef-right-aligin elementor-animation- media  ">
+                    <div class="elementskit-box-header elementor-animation-">
+                <div class="elementskit-info-box-icon  text-center">
+                    <i aria-hidden="true" class="elementkit-infobox-icon tsicon tsicon-envelope"></i>
+                </div>
+          </div>
+                        <div class="box-body">
+                        		  <p>support@courselog.com</p>
+                                </div>
+        
+        
+                </div>
+        </div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-25a5430 elementor-widget elementor-widget-elementskit-social-media" data-id="25a5430" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-social-media.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">			 <ul class="ekit_social_media">
+														<li class="elementor-repeater-item-e9af37a">
+					    <a href="#" aria-label="Facebook" class="facebook">
+														
+							<i aria-hidden="true" class="icon icon-facebook"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-2ddd0c5">
+					    <a href="#" aria-label="Instagram" class="1">
+														
+							<i aria-hidden="true" class="icon icon-instagram-1"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-d346a82">
+					    <a href="#" aria-label="LinkedIn" class="linkedin">
+														
+							<i aria-hidden="true" class="icon icon-linkedin"></i>									
+                                                                                                            </a>
+                    </li>
+                    														<li class="elementor-repeater-item-ed20098">
+					    <a href="#" aria-label="Twitter" class="twitter">
+														
+							<i aria-hidden="true" class="icon icon-twitter"></i>									
+                                                                                                            </a>
+                    </li>
+                    							</ul>
+		</div>				</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+				<section class="elementor-section elementor-inner-section elementor-element elementor-element-e1fd77b elementor-section-boxed elementor-section-height-default elementor-section-height-default" data-id="e1fd77b" data-element_type="section">
+						<div class="elementor-container elementor-column-gap-default">
+					<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-8341ea8" data-id="8341ea8" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-310f30a elementor-widget__width-auto elementor-widget elementor-widget-courselog-logo" data-id="310f30a" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="courselog-logo.default">
+				<div class="elementor-widget-container">
+					    <div class="courselog-widget-logo">
+        <a href="../../index.htm">
+            <img src="../../wp-content/uploads/sites/2/2020/02/white_logo.png" alt="Woo Courselog">
+        </a>
+    </div>
+
+    				</div>
+				</div>
+					</div>
+		</div>
+				<div class="elementor-column elementor-col-50 elementor-inner-column elementor-element elementor-element-13c8454" data-id="13c8454" data-element_type="column">
+			<div class="elementor-widget-wrap elementor-element-populated">
+						<div class="elementor-element elementor-element-059d164 elementor-widget__width-auto elementor-widget elementor-widget-elementskit-page-list" data-id="059d164" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-page-list.default">
+				<div class="elementor-widget-container">
+					<div class="ekit-wid-con">		<div class="elementor-icon-list-items  elementor-inline-items">
+							<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-c904f58 ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Privacy Policy</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+								<div class="elementor-icon-list-item   ">
+						<a class="elementor-repeater-item-9df660c ekit_badge_left" href="#" target="_blank" rel="nofollow">
+							<div class="ekit_page_list_content">
+																<span class="elementor-icon-list-text">
+									<span class="ekit_page_list_title_title">Terms of service</span>
+																	</span>
+							</div>
+													</a>
+					</div>
+						</div>
+		</div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e9a207f elementor-widget__width-auto elementor-widget elementor-widget-text-editor" data-id="e9a207f" data-element_type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									© 2024 Courselog. All Rights Reserved.								</div>
+				</div>
+					</div>
+		</div>
+					</div>
+		</section>
+					</div>
+		</div>
+					</div>
+		</section>
+				</div>
+		</div>
+			<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+	<div class="pswp__bg"></div>
+	<div class="pswp__scroll-wrap">
+		<div class="pswp__container">
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+			<div class="pswp__item"></div>
+		</div>
+		<div class="pswp__ui pswp__ui--hidden">
+			<div class="pswp__top-bar">
+				<div class="pswp__counter"></div>
+				<button class="pswp__button pswp__button--close" aria-label="Close (Esc)"></button>
+				<button class="pswp__button pswp__button--share" aria-label="Share"></button>
+				<button class="pswp__button pswp__button--fs" aria-label="Toggle fullscreen"></button>
+				<button class="pswp__button pswp__button--zoom" aria-label="Zoom in/out"></button>
+				<div class="pswp__preloader">
+					<div class="pswp__preloader__icn">
+						<div class="pswp__preloader__cut">
+							<div class="pswp__preloader__donut"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+				<div class="pswp__share-tooltip"></div>
+			</div>
+			<button class="pswp__button pswp__button--arrow--left" aria-label="Previous (arrow left)"></button>
+			<button class="pswp__button pswp__button--arrow--right" aria-label="Next (arrow right)"></button>
+			<div class="pswp__caption">
+				<div class="pswp__caption__center"></div>
+			</div>
+		</div>
+	</div>
+</div>
+	<script type='text/javascript'>
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})();
+	</script>
+	<link rel='stylesheet' id='wc-blocks-style-css' href='../../wp-content/plugins/woocommerce/assets/client/blocks/wc-blocks.css?ver=wc-9.5.2' type='text/css' media='all'>
+<style id='etn-custom-css-inline-css' type='text/css'>
+
+        .etn-event-single-content-wrap .etn-event-meta .etn-event-category span,
+        .etn-event-item .etn-event-footer .etn-atend-btn .etn-btn-border,
+        .etn-btn.etn-btn-border, .attr-btn-primary.etn-btn-border,
+        .etn-attendee-form .etn-btn.etn-btn-border,
+        .etn-ticket-widget .etn-btn.etn-btn-border,
+        .etn-settings-dashboard .button-primary.etn-btn-border,
+        .etn-single-speaker-item .etn-speaker-content a:hover,
+        .etn-event-style2 .etn-event-date,
+        .etn-event-style3 .etn-event-content .etn-title a:hover,
+        .event-tab-wrapper ul li a.etn-tab-a,
+        .etn-speaker-item.style-3:hover .etn-speaker-content .etn-title a,
+		.etn-variable-ticket-widget .ticket-header,
+		.events_calendar_list .calendar-event-details:hover .calendar-event-title,
+        .etn-event-item:hover .etn-title a,
+		.etn-recurring-widget .etn-date-text,
+		
+		.etn-event-header ul li i {
+            color: #2878eb;
+        }
+        .etn-event-item .etn-event-category span,
+        .etn-btn, .attr-btn-primary,
+        .etn-attendee-form .etn-btn,
+        .etn-ticket-widget .etn-btn,
+        .schedule-list-1 .schedule-header,
+        .speaker-style4 .etn-speaker-content .etn-title a,
+        .etn-speaker-details3 .speaker-title-info,
+        .etn-event-slider .swiper-pagination-bullet, .etn-speaker-slider .swiper-pagination-bullet,
+        .etn-event-slider .swiper-button-next, .etn-event-slider .swiper-button-prev,
+        .etn-speaker-slider .swiper-button-next, .etn-speaker-slider .swiper-button-prev,
+        .etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a,
+        .etn-event-header .etn-event-countdown-wrap .etn-count-item,
+        .schedule-tab-1 .etn-nav li a.etn-active,
+        .schedule-list-wrapper .schedule-listing.multi-schedule-list .schedule-slot-time,
+        .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a,
+        .event-tab-wrapper ul li a.etn-tab-a.etn-active,
+        .etn-btn, button.etn-btn.etn-btn-primary,
+        .etn-schedule-style-3 ul li:before,
+        .etn-zoom-btn,
+        .cat-radio-btn-list [type=radio]:checked+label:after,
+        .cat-radio-btn-list [type=radio]:not(:checked)+label:after,
+        .etn-default-calendar-style .fc-button:hover,
+        .etn-default-calendar-style .fc-state-highlight,
+		.etn-calender-list a:hover,
+        .events_calendar_standard .cat-dropdown-list select,
+		.etn-event-banner-wrap,
+		.events_calendar_list .calendar-event-details .calendar-event-content .calendar-event-category-wrap .etn-event-category,
+		.etn-variable-ticket-widget .etn-add-to-cart-block,
+		.etn-recurring-event-wrapper #seeMore,
+		.more-event-tag,
+		.etn-order-purchase-create-form .ant-input-outlined:hover,
+		.etn-order-purchase-create-form .ant-input-outlined:focus-within,
+        .etn-settings-dashboard .button-primary{
+            background-color: #2878eb;
+        }
+
+        .etn-event-item .etn-event-footer .etn-atend-btn .etn-btn-border,
+        .etn-btn.etn-btn-border, .attr-btn-primary.etn-btn-border,
+        .etn-attendee-form .etn-btn.etn-btn-border,
+        .etn-ticket-widget .etn-btn.etn-btn-border,
+        .event-tab-wrapper ul li a.etn-tab-a,
+        .event-tab-wrapper ul li a.etn-tab-a.etn-active,
+        .etn-schedule-style-3 ul li:after,
+        .etn-default-calendar-style .fc-ltr .fc-basic-view .fc-day-top.fc-today .fc-day-number,
+        .etn-default-calendar-style .fc-button:hover,
+		.etn-variable-ticket-widget .etn-variable-total-price,
+		.etn-order-purchase-create-form .ant-input-outlined:hover,
+		.etn-order-purchase-create-form .ant-input-outlined:focus-within,
+		.etn-order-purchase-create-form .ant-input-number-outlined:focus-within,
+		.etn-order-purchase-create-form .ant-input-number-outlined:hover,
+        .etn-settings-dashboard .button-primary.etn-btn-border{
+            border-color: #2878eb;
+        }
+        .schedule-tab-wrapper .etn-nav li a.etn-active,
+        .etn-speaker-item.style-3 .etn-speaker-content{
+            border-bottom-color: #2878eb;
+        }
+        .schedule-tab-wrapper .etn-nav li a:after,
+        .etn-event-list2 .etn-event-content,
+        .schedule-tab-1 .etn-nav li a.etn-active:after{
+            border-color: #2878eb transparent transparent transparent;
+        }
+
+        .etn-default-calendar-style .fc .fc-daygrid-bg-harness:first-of-type:before{
+            background-color: #2878eb2A;
+        }
+		 .sidebar .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		 .left-sidebar .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		 .right-sidebar .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		  .widget .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		   .widgets .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		   .main-sidebar .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before,
+		    #sidebar .etn-default-calendar-style .fc .fc-daygrid-bg-harness:nth-of-type(1)::before{
+				background-color: #2878eb;
+		 }
+
+        .etn-event-item .etn-event-location,
+        .etn-event-tag-list a:hover,
+        .etn-schedule-wrap .etn-schedule-info .etn-schedule-time{
+            color: ;
+        }
+        .etn-event-tag-list a:hover{
+            border-color: ;
+        }
+        .etn-btn:hover, .attr-btn-primary:hover,
+        .etn-attendee-form .etn-btn:hover,
+        .etn-ticket-widget .etn-btn:hover,
+        .speaker-style4 .etn-speaker-content p,
+        .etn-btn, button.etn-btn.etn-btn-primary:hover,
+        .etn-zoom-btn,
+		.events_calendar_list .calendar-event-details .event-calendar-action .etn-btn, .events_calendar_list .calendar-event-details .event-calendar-action .etn-price.event-calendar-details-btn,
+        .etn-speaker-item.style-3 .etn-speaker-content .etn-speakers-social a:hover,
+        .etn-single-speaker-item .etn-speaker-thumb .etn-speakers-social a:hover,
+		.etn-recurring-event-wrapper #seeMore:hover, .etn-recurring-event-wrapper #seeMore:focus,
+        .etn-settings-dashboard .button-primary:hover{
+            background-color: ;
+        }
+		.events_calendar_list .calendar-event-details .event-calendar-action .etn-btn {
+			max-width: 120px;
+			display: block;
+			text-align: center;
+			margin-left: auto;
+		}
+		
+		.etn-order-purchase-create-form .ant-select:not(.ant-select-disabled):hover .ant-select-selector,
+		.etn-order-purchase-create-form .ant-select-focused:where(.css-dev-only-do-not-override-5gkvuh).ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer) .ant-select-selector,
+		.etn-order-purchase-create-form .ant-select-outlined:not(.ant-select-disabled):not(.ant-select-customize-input):not(.ant-pagination-size-changer):hover .ant-select-selector {
+			border-color: #2878eb;
+		}
+		.etn-checkbox-group .ant-checkbox-wrapper:not(.ant-checkbox-wrapper-disabled):hover .ant-checkbox-checked:not(.ant-checkbox-disabled) .ant-checkbox-inner {
+			background-color: #2878eb;
+			border-color: #2878eb;
+		}
+		.etn-checkbox-group .ant-checkbox-checked .ant-checkbox-inner,
+		.etn-checkbox-group .ant-checkbox:not(.ant-checkbox-disabled):hover .ant-checkbox-inner,
+		.etn-checkbox-group .ant-checkbox-wrapper:hover .ant-checkbox .ant-checkbox-inner,
+		.etn-checkbox-group .ant-checkbox-wrapper:hover .ant-checkbox-checked .ant-checkbox-inner {
+			border-color: #2878eb;
+			background-color: #2878eb;
+		}
+
+		.etn-extra-fields-container .ant-radio-checked .ant-radio-inner {
+			background-color: #2878eb;
+			border-color: #2878eb;
+		}
+
+		.etn-extra-fields-container .ant-radio-wrapper:hover .ant-radio-inner {
+			border-color: #2878eb;
+		}
+
+		.etn-extra-field-text-area .ant-input-outlined:hover,
+		.etn-extra-field-text-area .ant-input-outlined:focus-within {
+			border-color: #2878eb;
+			background-color: #fff;
+		}
+
+		.background-color-override {
+			background-color: #fff !important;
+		}
+
+		
+</style>
+<link rel='stylesheet' id='font-awesome-5-all-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.26.4' type='text/css' media='all'>
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='../../wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.26.4' type='text/css' media='all'>
+<link rel='stylesheet' id='widget-text-editor-css' href='../../wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.26.4' type='text/css' media='all'>
+<link rel='stylesheet' id='swiper-css' href='../../wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' type='text/css' media='all'>
+<link rel='stylesheet' id='e-swiper-css' href='../../wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.26.4' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-post-356-css' href='../../wp-content/uploads/sites/2/elementor/css/post-356.css?ver=1717642815' type='text/css' media='all'>
+<link rel='stylesheet' id='metform-ui-css' href='../../wp-content/plugins/metform/public/assets/css/metform-ui.css?ver=3.9.2' type='text/css' media='all'>
+<link rel='stylesheet' id='metform-style-css' href='../../wp-content/plugins/metform/public/assets/css/style.css?ver=3.9.2' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-icons-css' href='../../wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.34.0' type='text/css' media='all'>
+<link rel='stylesheet' id='elementor-post-573-css' href='../../wp-content/uploads/sites/2/elementor/css/post-573.css?ver=1717642813' type='text/css' media='all'>
+<link rel='stylesheet' id='courselog-widget-styles-pro-css' href='../../wp-content/themes/courselog/assets/css/widget-styles-pro.css?ver=1.4.1' type='text/css' media='all'>
+<script type="text/javascript" src="../../wp-includes/js/dist/vendor/react.min.js?ver=18.3.1" id="react-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/vendor/react-jsx-runtime.min.js?ver=18.3.1" id="react-jsx-runtime-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/deprecated.min.js?ver=e1f84915c5e8ae38964c" id="wp-deprecated-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/dom.min.js?ver=93117dfee2692b04b770" id="wp-dom-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/vendor/react-dom.min.js?ver=18.3.1" id="react-dom-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/escape-html.min.js?ver=6561a406d2d232a6fbd2" id="wp-escape-html-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/element.min.js?ver=cb762d190aebbec25b27" id="wp-element-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/is-shallow-equal.min.js?ver=e0f9f1d78d83f5196979" id="wp-is-shallow-equal-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-includes/js/dist/keycodes.min.js?ver=034ff647a54b018581d3" id="wp-keycodes-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/priority-queue.min.js?ver=9c21c957c7e50ffdbf48" id="wp-priority-queue-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/compose.min.js?ver=85f0708cd2e6b26addeb" id="wp-compose-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/primitives.min.js?ver=aef2543ab60c8c9bb609" id="wp-primitives-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/plugins.min.js?ver=ef6da4a9b2747b62c09c" id="wp-plugins-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/private-apis.min.js?ver=4b858962c15c2c7a135f" id="wp-private-apis-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/redux-routine.min.js?ver=a0a172871afaeb261566" id="wp-redux-routine-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/dist/data.min.js?ver=7c62e39de0308c73d50c" id="wp-data-js"></script>
+<script type="text/javascript" id="wp-data-js-after">
+/* <![CDATA[ */
+( function() {
+	var userId = 0;
+	var storageKey = "WP_DATA_USER_" + userId;
+	wp.data
+		.use( wp.data.plugins.persistence, { storageKey: storageKey } );
+} )();
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/timetics/assets/js/vendors/flatpickr.js?ver=1.0.28" id="timetics-flatpickr-scripts-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/timetics/assets/js/packages.js?ver=1.0.28" id="timetics-packages-js"></script>
+<script type="text/javascript" id="timetics-frontend-scripts-js-extra">
+/* <![CDATA[ */
+var timetics = {"site_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog","nonce":"3b5006f705","date_format":"F j, Y","time_format":"g:i a","stripe_pub_key":"","currency":"USD","stripe_configure":"","current_user_id":"0","start_of_week":"1","currency_list":[{"name":"AED","symbol":"&#x62f;.&#x625;","country":"United Arab Emirates dirham"},{"name":"AFN","symbol":"&#x60b;","country":"Afghan afghani"},{"name":"ALL","symbol":"L","country":"Albanian lek"},{"name":"AMD","symbol":"AMD","country":"Armenian dram"},{"name":"ANG","symbol":"&fnof;","country":"Netherlands Antillean guilder"},{"name":"AOA","symbol":"Kz","country":"Angolan kwanza"},{"name":"ARS","symbol":"&#36;","country":"Argentine peso"},{"name":"AUD","symbol":"&#36;","country":"Australian dollar"},{"name":"AWG","symbol":"Afl.","country":"Aruban florin"},{"name":"AZN","symbol":"AZN","country":"Azerbaijani manat"},{"name":"BAM","symbol":"KM","country":"Bosnia and Herzegovina convertible mark"},{"name":"BBD","symbol":"&#36;","country":"Barbadian dollar"},{"name":"BDT","symbol":"&#2547;&nbsp;","country":"Bangladeshi taka"},{"name":"BGN","symbol":"&#1083;&#1074;.","country":"Bulgarian lev"},{"name":"BHD","symbol":".&#x62f;.&#x628;","country":"Bahraini dinar"},{"name":"BIF","symbol":"Fr","country":"Burundian franc"},{"name":"BMD","symbol":"&#36;","country":"Bermudian dollar"},{"name":"BND","symbol":"&#36;","country":"Brunei dollar"},{"name":"BOB","symbol":"Bs.","country":"Bolivian boliviano"},{"name":"BRL","symbol":"&#82;&#36;","country":"Brazilian real"},{"name":"BSD","symbol":"&#36;","country":"Bahamian dollar"},{"name":"BTC","symbol":"&#3647;","country":"Bitcoin"},{"name":"BTN","symbol":"Nu.","country":"Bhutanese ngultrum"},{"name":"BWP","symbol":"P","country":"Botswana pula"},{"name":"BYR","symbol":"Br","country":"Belarusian ruble (old)"},{"name":"BYN","symbol":"Br","country":"Belarusian ruble"},{"name":"BZD","symbol":"&#36;","country":"Belize dollar"},{"name":"CAD","symbol":"&#36;","country":"Canadian dollar"},{"name":"CDF","symbol":"Fr","country":"Congolese franc"},{"name":"CHF","symbol":"&#67;&#72;&#70;","country":"Swiss franc"},{"name":"CLP","symbol":"&#36;","country":"Chilean peso"},{"name":"CNY","symbol":"&yen;","country":"Chinese yuan"},{"name":"COP","symbol":"&#36;","country":"Colombian peso"},{"name":"CRC","symbol":"&#x20a1;","country":"Costa Rican col&oacute;n"},{"name":"CUC","symbol":"&#36;","country":"Cuban convertible peso"},{"name":"CUP","symbol":"&#36;","country":"Cuban peso"},{"name":"CVE","symbol":"&#36;","country":"Cape Verdean escudo"},{"name":"CZK","symbol":"&#75;&#269;","country":"Czech koruna"},{"name":"DJF","symbol":"Fr","country":"Djiboutian franc"},{"name":"DKK","symbol":"kr.","country":"Danish krone"},{"name":"DOP","symbol":"RD&#36;","country":"Dominican peso"},{"name":"DZD","symbol":"&#x62f;.&#x62c;","country":"Algerian dinar"},{"name":"EGP","symbol":"EGP","country":"Egyptian pound"},{"name":"ERN","symbol":"Nfk","country":"Eritrean nakfa"},{"name":"ETB","symbol":"Br","country":"Ethiopian birr"},{"name":"EUR","symbol":"&euro;","country":"Euro"},{"name":"FJD","symbol":"&#36;","country":"Fijian dollar"},{"name":"FKP","symbol":"&pound;","country":"Falkland Islands pound"},{"name":"GBP","symbol":"&pound;","country":"Pound sterling"},{"name":"GEL","symbol":"&#x20be;","country":"Georgian lari"},{"name":"GGP","symbol":"&pound;","country":"Guernsey pound"},{"name":"GHS","symbol":"&#x20b5;","country":"Ghana cedi"},{"name":"GIP","symbol":"&pound;","country":"Gibraltar pound"},{"name":"GMD","symbol":"D","country":"Gambian dalasi"},{"name":"GNF","symbol":"Fr","country":"Guinean franc"},{"name":"GTQ","symbol":"Q","country":"Guatemalan quetzal"},{"name":"GYD","symbol":"&#36;","country":"Guyanese dollar"},{"name":"HKD","symbol":"&#36;","country":"Hong Kong dollar"},{"name":"HNL","symbol":"L","country":"Honduran lempira"},{"name":"HRK","symbol":"kn","country":"Croatian kuna"},{"name":"HTG","symbol":"G","country":"Haitian gourde"},{"name":"HUF","symbol":"&#70;&#116;","country":"Hungarian forint"},{"name":"IDR","symbol":"Rp","country":"Indonesian rupiah"},{"name":"ILS","symbol":"&#8362;","country":"Israeli new shekel"},{"name":"IMP","symbol":"&pound;","country":"Manx pound"},{"name":"INR","symbol":"&#8377;","country":"Indian rupee"},{"name":"IQD","symbol":"&#x62f;.&#x639;","country":"Iraqi dinar"},{"name":"IRR","symbol":"&#xfdfc;","country":"Iranian rial"},{"name":"IRT","symbol":"&#x062A;&#x0648;&#x0645;&#x0627;&#x0646;","country":"Iranian toman"},{"name":"ISK","symbol":"kr.","country":"Icelandic kr&oacute;na"},{"name":"JEP","symbol":"&pound;","country":"Jersey pound"},{"name":"JMD","symbol":"&#36;","country":"Jamaican dollar"},{"name":"JOD","symbol":"&#x62f;.&#x627;","country":"Jordanian dinar"},{"name":"JPY","symbol":"&yen;","country":"Japanese yen"},{"name":"KES","symbol":"KSh","country":"Kenyan shilling"},{"name":"KGS","symbol":"&#x441;&#x43e;&#x43c;","country":"Kyrgyzstani som"},{"name":"KHR","symbol":"&#x17db;","country":"Cambodian riel"},{"name":"KMF","symbol":"Fr","country":"Comorian franc"},{"name":"KPW","symbol":"&#x20a9;","country":"North Korean won"},{"name":"KRW","symbol":"&#8361;","country":"South Korean won"},{"name":"KWD","symbol":"&#x62f;.&#x643;","country":"Kuwaiti dinar"},{"name":"KYD","symbol":"&#36;","country":"Cayman Islands dollar"},{"name":"KZT","symbol":"&#8376;","country":"Kazakhstani tenge"},{"name":"LAK","symbol":"&#8365;","country":"Lao kip"},{"name":"LBP","symbol":"&#x644;.&#x644;","country":"Lebanese pound"},{"name":"LKR","symbol":"&#xdbb;&#xdd4;","country":"Sri Lankan rupee"},{"name":"LRD","symbol":"&#36;","country":"Liberian dollar"},{"name":"LSL","symbol":"L","country":"Lesotho loti"},{"name":"LYD","symbol":"&#x644;.&#x62f;","country":"Libyan dinar"},{"name":"MAD","symbol":"&#x62f;.&#x645;.","country":"Moroccan dirham"},{"name":"MDL","symbol":"MDL","country":"Moldovan leu"},{"name":"MGA","symbol":"Ar","country":"Malagasy ariary"},{"name":"MKD","symbol":"&#x434;&#x435;&#x43d;","country":"Macedonian denar"},{"name":"MMK","symbol":"Ks","country":"Burmese kyat"},{"name":"MNT","symbol":"&#x20ae;","country":"Mongolian t&ouml;gr&ouml;g"},{"name":"MOP","symbol":"P","country":"Macanese pataca"},{"name":"MRU","symbol":"UM","country":"Mauritanian ouguiya"},{"name":"MUR","symbol":"&#x20a8;","country":"Mauritian rupee"},{"name":"MVR","symbol":".&#x783;","country":"Maldivian rufiyaa"},{"name":"MWK","symbol":"MK","country":"Malawian kwacha"},{"name":"MXN","symbol":"&#36;","country":"Mexican peso"},{"name":"MYR","symbol":"&#82;&#77;","country":"Malaysian ringgit"},{"name":"MZN","symbol":"MT","country":"Mozambican metical"},{"name":"NAD","symbol":"N&#36;","country":"Namibian dollar"},{"name":"NGN","symbol":"&#8358;","country":"Nigerian naira"},{"name":"NIO","symbol":"C&#36;","country":"Nicaraguan c&oacute;rdoba"},{"name":"NOK","symbol":"&#107;&#114;","country":"Norwegian krone"},{"name":"NPR","symbol":"&#8360;","country":"Nepalese rupee"},{"name":"NZD","symbol":"&#36;","country":"New Zealand dollar"},{"name":"OMR","symbol":"&#x631;.&#x639;.","country":"Omani rial"},{"name":"PAB","symbol":"B\/.","country":"Panamanian balboa"},{"name":"PEN","symbol":"S\/","country":"Sol"},{"name":"PGK","symbol":"K","country":"Papua New Guinean kina"},{"name":"PHP","symbol":"&#8369;","country":"Philippine peso"},{"name":"PKR","symbol":"&#8360;","country":"Pakistani rupee"},{"name":"PLN","symbol":"&#122;&#322;","country":"Polish z&#x142;oty"},{"name":"PRB","symbol":"&#x440;.","country":"Transnistrian ruble"},{"name":"PYG","symbol":"&#8370;","country":"Paraguayan guaran&iacute;"},{"name":"QAR","symbol":"&#x631;.&#x642;","country":"Qatari riyal"},{"name":"RMB","symbol":"&yen;","country":"Chinese renminbi"},{"name":"RON","symbol":"lei","country":"Romanian leu"},{"name":"RSD","symbol":"&#1088;&#1089;&#1076;","country":"Serbian dinar"},{"name":"RUB","symbol":"&#8381;","country":"Russian ruble"},{"name":"RWF","symbol":"Fr","country":"Rwandan franc"},{"name":"SAR","symbol":"&#x631;.&#x633;","country":"Saudi riyal"},{"name":"SBD","symbol":"&#36;","country":"Solomon Islands dollar"},{"name":"SCR","symbol":"&#x20a8;","country":"Seychellois rupee"},{"name":"SDG","symbol":"&#x62c;.&#x633;.","country":"Sudanese pound"},{"name":"SEK","symbol":"&#107;&#114;","country":"Swedish krona"},{"name":"SGD","symbol":"&#36;","country":"Singapore dollar"},{"name":"SHP","symbol":"&pound;","country":"Saint Helena pound"},{"name":"SLL","symbol":"Le","country":"Sierra Leonean leone"},{"name":"SOS","symbol":"Sh","country":"Somali shilling"},{"name":"SRD","symbol":"&#36;","country":"Surinamese dollar"},{"name":"SSP","symbol":"&pound;","country":"South Sudanese pound"},{"name":"STN","symbol":"Db","country":"S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"},{"name":"SYP","symbol":"&#x644;.&#x633;","country":"Syrian pound"},{"name":"SZL","symbol":"E","country":"Swazi lilangeni"},{"name":"THB","symbol":"&#3647;","country":"Thai baht"},{"name":"TJS","symbol":"&#x405;&#x41c;","country":"Tajikistani somoni"},{"name":"TMT","symbol":"m","country":"Turkmenistan manat"},{"name":"TND","symbol":"&#x62f;.&#x62a;","country":"Tunisian dinar"},{"name":"TOP","symbol":"T&#36;","country":"Tongan pa&#x2bb;anga"},{"name":"TRY","symbol":"&#8378;","country":"Turkish lira"},{"name":"TTD","symbol":"&#36;","country":"Trinidad and Tobago dollar"},{"name":"TWD","symbol":"&#78;&#84;&#36;","country":"New Taiwan dollar"},{"name":"TZS","symbol":"Sh","country":"Tanzanian shilling"},{"name":"UAH","symbol":"&#8372;","country":"Ukrainian hryvnia"},{"name":"UGX","symbol":"UGX","country":"Ugandan shilling"},{"name":"USD","symbol":"&#36;","country":"United States (US) dollar"},{"name":"UYU","symbol":"&#36;","country":"Uruguayan peso"},{"name":"UZS","symbol":"UZS","country":"Uzbekistani som"},{"name":"VEF","symbol":"Bs F","country":"Venezuelan bol&iacute;var"},{"name":"VES","symbol":"Bs.S","country":"Bol&iacute;var soberano"},{"name":"VND","symbol":"&#8363;","country":"Vietnamese &#x111;&#x1ed3;ng"},{"name":"VUV","symbol":"Vt","country":"Vanuatu vatu"},{"name":"WST","symbol":"T","country":"Samoan t&#x101;l&#x101;"},{"name":"XAF","symbol":"CFA","country":"Central African CFA franc"},{"name":"XCD","symbol":"&#36;","country":"East Caribbean dollar"},{"name":"XOF","symbol":"CFA","country":"West African CFA franc"},{"name":"XPF","symbol":"Fr","country":"CFP franc"},{"name":"YER","symbol":"&#xfdfc;","country":"Yemeni rial"},{"name":"ZAR","symbol":"&#82;","country":"South African rand"},{"name":"ZMW","symbol":"ZK","country":"Zambian kwacha"}],"locale_name":"en-us"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/timetics/assets/js/frontend.js?ver=1.0.28" id="timetics-frontend-scripts-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/metform/public/assets/lib/cute-alert/cute-alert.js?ver=3.9.2" id="cute-alert-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-event-solution/build/js/i18n-loader.js?ver=4.0.19" id="eventin-i18n-js"></script>
+<script type="text/javascript" id="etn-public-js-extra">
+/* <![CDATA[ */
+var localized_data_obj = {"empty":"Please fill the field","invalid":"Invalid input","only_number":"Only number allowed","text":"Please fill the field","number":"Please input a number","date":"Please fill the field","radio":"Please check the field","expired":"Expired","scanner_common_msg":"Something went wrong! Please try again.","ajax_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","site_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog","admin_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/","assets_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-content\/plugins\/wp-event-solution\/assets","evnetin_pro_active":"","locale_name":"en-us","start_of_week":"1","author_id":"0","ticket_scanner_link":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/edit.php?post_type=etn-attendee","post_id":"5836","zoom_connection_check_nonce":"4805d94666","ticket_status_nonce":"8605accbab","zoom_module":"no","attendee_module":"no","currency_list":[{"name":"AED","symbol":"&#x62f;.&#x625;","country":"United Arab Emirates dirham"},{"name":"AFN","symbol":"&#x60b;","country":"Afghan afghani"},{"name":"ALL","symbol":"L","country":"Albanian lek"},{"name":"AMD","symbol":"AMD","country":"Armenian dram"},{"name":"ANG","symbol":"&fnof;","country":"Netherlands Antillean guilder"},{"name":"AOA","symbol":"Kz","country":"Angolan kwanza"},{"name":"ARS","symbol":"&#36;","country":"Argentine peso"},{"name":"AUD","symbol":"&#36;","country":"Australian dollar"},{"name":"AWG","symbol":"Afl.","country":"Aruban florin"},{"name":"AZN","symbol":"AZN","country":"Azerbaijani manat"},{"name":"BAM","symbol":"KM","country":"Bosnia and Herzegovina convertible mark"},{"name":"BBD","symbol":"&#36;","country":"Barbadian dollar"},{"name":"BDT","symbol":"&#2547;&nbsp;","country":"Bangladeshi taka"},{"name":"BGN","symbol":"&#1083;&#1074;.","country":"Bulgarian lev"},{"name":"BHD","symbol":".&#x62f;.&#x628;","country":"Bahraini dinar"},{"name":"BIF","symbol":"Fr","country":"Burundian franc"},{"name":"BMD","symbol":"&#36;","country":"Bermudian dollar"},{"name":"BND","symbol":"&#36;","country":"Brunei dollar"},{"name":"BOB","symbol":"Bs.","country":"Bolivian boliviano"},{"name":"BRL","symbol":"&#82;&#36;","country":"Brazilian real"},{"name":"BSD","symbol":"&#36;","country":"Bahamian dollar"},{"name":"BTC","symbol":"&#3647;","country":"Bitcoin"},{"name":"BTN","symbol":"Nu.","country":"Bhutanese ngultrum"},{"name":"BWP","symbol":"P","country":"Botswana pula"},{"name":"BYR","symbol":"Br","country":"Belarusian ruble (old)"},{"name":"BYN","symbol":"Br","country":"Belarusian ruble"},{"name":"BZD","symbol":"&#36;","country":"Belize dollar"},{"name":"CAD","symbol":"&#36;","country":"Canadian dollar"},{"name":"CDF","symbol":"Fr","country":"Congolese franc"},{"name":"CHF","symbol":"&#67;&#72;&#70;","country":"Swiss franc"},{"name":"CLP","symbol":"&#36;","country":"Chilean peso"},{"name":"CNY","symbol":"&yen;","country":"Chinese yuan"},{"name":"COP","symbol":"&#36;","country":"Colombian peso"},{"name":"CRC","symbol":"&#x20a1;","country":"Costa Rican col&oacute;n"},{"name":"CUC","symbol":"&#36;","country":"Cuban convertible peso"},{"name":"CUP","symbol":"&#36;","country":"Cuban peso"},{"name":"CVE","symbol":"&#36;","country":"Cape Verdean escudo"},{"name":"CZK","symbol":"&#75;&#269;","country":"Czech koruna"},{"name":"DJF","symbol":"Fr","country":"Djiboutian franc"},{"name":"DKK","symbol":"kr.","country":"Danish krone"},{"name":"DOP","symbol":"RD&#36;","country":"Dominican peso"},{"name":"DZD","symbol":"&#x62f;.&#x62c;","country":"Algerian dinar"},{"name":"EGP","symbol":"EGP","country":"Egyptian pound"},{"name":"ERN","symbol":"Nfk","country":"Eritrean nakfa"},{"name":"ETB","symbol":"Br","country":"Ethiopian birr"},{"name":"EUR","symbol":"&euro;","country":"Euro"},{"name":"FJD","symbol":"&#36;","country":"Fijian dollar"},{"name":"FKP","symbol":"&pound;","country":"Falkland Islands pound"},{"name":"GBP","symbol":"&pound;","country":"Pound sterling"},{"name":"GEL","symbol":"&#x20be;","country":"Georgian lari"},{"name":"GGP","symbol":"&pound;","country":"Guernsey pound"},{"name":"GHS","symbol":"&#x20b5;","country":"Ghana cedi"},{"name":"GIP","symbol":"&pound;","country":"Gibraltar pound"},{"name":"GMD","symbol":"D","country":"Gambian dalasi"},{"name":"GNF","symbol":"Fr","country":"Guinean franc"},{"name":"GTQ","symbol":"Q","country":"Guatemalan quetzal"},{"name":"GYD","symbol":"&#36;","country":"Guyanese dollar"},{"name":"HKD","symbol":"&#36;","country":"Hong Kong dollar"},{"name":"HNL","symbol":"L","country":"Honduran lempira"},{"name":"HRK","symbol":"kn","country":"Croatian kuna"},{"name":"HTG","symbol":"G","country":"Haitian gourde"},{"name":"HUF","symbol":"&#70;&#116;","country":"Hungarian forint"},{"name":"IDR","symbol":"Rp","country":"Indonesian rupiah"},{"name":"ILS","symbol":"&#8362;","country":"Israeli new shekel"},{"name":"IMP","symbol":"&pound;","country":"Manx pound"},{"name":"INR","symbol":"&#8377;","country":"Indian rupee"},{"name":"IQD","symbol":"&#x62f;.&#x639;","country":"Iraqi dinar"},{"name":"IRR","symbol":"&#xfdfc;","country":"Iranian rial"},{"name":"IRT","symbol":"&#x062A;&#x0648;&#x0645;&#x0627;&#x0646;","country":"Iranian toman"},{"name":"ISK","symbol":"kr.","country":"Icelandic kr&oacute;na"},{"name":"JEP","symbol":"&pound;","country":"Jersey pound"},{"name":"JMD","symbol":"&#36;","country":"Jamaican dollar"},{"name":"JOD","symbol":"&#x62f;.&#x627;","country":"Jordanian dinar"},{"name":"JPY","symbol":"&yen;","country":"Japanese yen"},{"name":"KES","symbol":"KSh","country":"Kenyan shilling"},{"name":"KGS","symbol":"&#x441;&#x43e;&#x43c;","country":"Kyrgyzstani som"},{"name":"KHR","symbol":"&#x17db;","country":"Cambodian riel"},{"name":"KMF","symbol":"Fr","country":"Comorian franc"},{"name":"KPW","symbol":"&#x20a9;","country":"North Korean won"},{"name":"KRW","symbol":"&#8361;","country":"South Korean won"},{"name":"KWD","symbol":"&#x62f;.&#x643;","country":"Kuwaiti dinar"},{"name":"KYD","symbol":"&#36;","country":"Cayman Islands dollar"},{"name":"KZT","symbol":"&#8376;","country":"Kazakhstani tenge"},{"name":"LAK","symbol":"&#8365;","country":"Lao kip"},{"name":"LBP","symbol":"&#x644;.&#x644;","country":"Lebanese pound"},{"name":"LKR","symbol":"&#xdbb;&#xdd4;","country":"Sri Lankan rupee"},{"name":"LRD","symbol":"&#36;","country":"Liberian dollar"},{"name":"LSL","symbol":"L","country":"Lesotho loti"},{"name":"LYD","symbol":"&#x644;.&#x62f;","country":"Libyan dinar"},{"name":"MAD","symbol":"&#x62f;.&#x645;.","country":"Moroccan dirham"},{"name":"MDL","symbol":"MDL","country":"Moldovan leu"},{"name":"MGA","symbol":"Ar","country":"Malagasy ariary"},{"name":"MKD","symbol":"&#x434;&#x435;&#x43d;","country":"Macedonian denar"},{"name":"MMK","symbol":"Ks","country":"Burmese kyat"},{"name":"MNT","symbol":"&#x20ae;","country":"Mongolian t&ouml;gr&ouml;g"},{"name":"MOP","symbol":"P","country":"Macanese pataca"},{"name":"MRU","symbol":"UM","country":"Mauritanian ouguiya"},{"name":"MUR","symbol":"&#x20a8;","country":"Mauritian rupee"},{"name":"MVR","symbol":".&#x783;","country":"Maldivian rufiyaa"},{"name":"MWK","symbol":"MK","country":"Malawian kwacha"},{"name":"MXN","symbol":"&#36;","country":"Mexican peso"},{"name":"MYR","symbol":"&#82;&#77;","country":"Malaysian ringgit"},{"name":"MZN","symbol":"MT","country":"Mozambican metical"},{"name":"NAD","symbol":"N&#36;","country":"Namibian dollar"},{"name":"NGN","symbol":"&#8358;","country":"Nigerian naira"},{"name":"NIO","symbol":"C&#36;","country":"Nicaraguan c&oacute;rdoba"},{"name":"NOK","symbol":"&#107;&#114;","country":"Norwegian krone"},{"name":"NPR","symbol":"&#8360;","country":"Nepalese rupee"},{"name":"NZD","symbol":"&#36;","country":"New Zealand dollar"},{"name":"OMR","symbol":"&#x631;.&#x639;.","country":"Omani rial"},{"name":"PAB","symbol":"B\/.","country":"Panamanian balboa"},{"name":"PEN","symbol":"S\/","country":"Sol"},{"name":"PGK","symbol":"K","country":"Papua New Guinean kina"},{"name":"PHP","symbol":"&#8369;","country":"Philippine peso"},{"name":"PKR","symbol":"&#8360;","country":"Pakistani rupee"},{"name":"PLN","symbol":"&#122;&#322;","country":"Polish z&#x142;oty"},{"name":"PRB","symbol":"&#x440;.","country":"Transnistrian ruble"},{"name":"PYG","symbol":"&#8370;","country":"Paraguayan guaran&iacute;"},{"name":"QAR","symbol":"&#x631;.&#x642;","country":"Qatari riyal"},{"name":"RMB","symbol":"&yen;","country":"Chinese renminbi"},{"name":"RON","symbol":"lei","country":"Romanian leu"},{"name":"RSD","symbol":"&#1088;&#1089;&#1076;","country":"Serbian dinar"},{"name":"RUB","symbol":"&#8381;","country":"Russian ruble"},{"name":"RWF","symbol":"Fr","country":"Rwandan franc"},{"name":"SAR","symbol":"&#x631;.&#x633;","country":"Saudi riyal"},{"name":"SBD","symbol":"&#36;","country":"Solomon Islands dollar"},{"name":"SCR","symbol":"&#x20a8;","country":"Seychellois rupee"},{"name":"SDG","symbol":"&#x62c;.&#x633;.","country":"Sudanese pound"},{"name":"SEK","symbol":"&#107;&#114;","country":"Swedish krona"},{"name":"SGD","symbol":"&#36;","country":"Singapore dollar"},{"name":"SHP","symbol":"&pound;","country":"Saint Helena pound"},{"name":"SLL","symbol":"Le","country":"Sierra Leonean leone"},{"name":"SOS","symbol":"Sh","country":"Somali shilling"},{"name":"SRD","symbol":"&#36;","country":"Surinamese dollar"},{"name":"SSP","symbol":"&pound;","country":"South Sudanese pound"},{"name":"STN","symbol":"Db","country":"S&atilde;o Tom&eacute; and Pr&iacute;ncipe dobra"},{"name":"SYP","symbol":"&#x644;.&#x633;","country":"Syrian pound"},{"name":"SZL","symbol":"E","country":"Swazi lilangeni"},{"name":"THB","symbol":"&#3647;","country":"Thai baht"},{"name":"TJS","symbol":"&#x405;&#x41c;","country":"Tajikistani somoni"},{"name":"TMT","symbol":"m","country":"Turkmenistan manat"},{"name":"TND","symbol":"&#x62f;.&#x62a;","country":"Tunisian dinar"},{"name":"TOP","symbol":"T&#36;","country":"Tongan pa&#x2bb;anga"},{"name":"TRY","symbol":"&#8378;","country":"Turkish lira"},{"name":"TTD","symbol":"&#36;","country":"Trinidad and Tobago dollar"},{"name":"TWD","symbol":"&#78;&#84;&#36;","country":"New Taiwan dollar"},{"name":"TZS","symbol":"Sh","country":"Tanzanian shilling"},{"name":"UAH","symbol":"&#8372;","country":"Ukrainian hryvnia"},{"name":"UGX","symbol":"UGX","country":"Ugandan shilling"},{"name":"USD","symbol":"&#36;","country":"United States (US) dollar"},{"name":"UYU","symbol":"&#36;","country":"Uruguayan peso"},{"name":"UZS","symbol":"UZS","country":"Uzbekistani som"},{"name":"VEF","symbol":"Bs F","country":"Venezuelan bol&iacute;var"},{"name":"VES","symbol":"Bs.S","country":"Bol&iacute;var soberano"},{"name":"VND","symbol":"&#8363;","country":"Vietnamese &#x111;&#x1ed3;ng"},{"name":"VUV","symbol":"Vt","country":"Vanuatu vatu"},{"name":"WST","symbol":"T","country":"Samoan t&#x101;l&#x101;"},{"name":"XAF","symbol":"CFA","country":"Central African CFA franc"},{"name":"XCD","symbol":"&#36;","country":"East Caribbean dollar"},{"name":"XOF","symbol":"CFA","country":"West African CFA franc"},{"name":"XPF","symbol":"Fr","country":"CFP franc"},{"name":"YER","symbol":"&#xfdfc;","country":"Yemeni rial"},{"name":"ZAR","symbol":"&#82;","country":"South African rand"},{"name":"ZMW","symbol":"ZK","country":"Zambian kwacha"}],"date_format":"F j, Y","date_format_string":"January 15, 2025","time_format":"g:i a","time_format_string":"9:15 am","timezone_list":["Africa\/Abidjan","Africa\/Accra","Africa\/Addis_Ababa","Africa\/Algiers","Africa\/Asmara","Africa\/Bamako","Africa\/Bangui","Africa\/Banjul","Africa\/Bissau","Africa\/Blantyre","Africa\/Brazzaville","Africa\/Bujumbura","Africa\/Cairo","Africa\/Casablanca","Africa\/Ceuta","Africa\/Conakry","Africa\/Dakar","Africa\/Dar_es_Salaam","Africa\/Djibouti","Africa\/Douala","Africa\/El_Aaiun","Africa\/Freetown","Africa\/Gaborone","Africa\/Harare","Africa\/Johannesburg","Africa\/Juba","Africa\/Kampala","Africa\/Khartoum","Africa\/Kigali","Africa\/Kinshasa","Africa\/Lagos","Africa\/Libreville","Africa\/Lome","Africa\/Luanda","Africa\/Lubumbashi","Africa\/Lusaka","Africa\/Malabo","Africa\/Maputo","Africa\/Maseru","Africa\/Mbabane","Africa\/Mogadishu","Africa\/Monrovia","Africa\/Nairobi","Africa\/Ndjamena","Africa\/Niamey","Africa\/Nouakchott","Africa\/Ouagadougou","Africa\/Porto-Novo","Africa\/Sao_Tome","Africa\/Tripoli","Africa\/Tunis","Africa\/Windhoek","America\/Adak","America\/Anchorage","America\/Anguilla","America\/Antigua","America\/Araguaina","America\/Argentina\/Buenos_Aires","America\/Argentina\/Catamarca","America\/Argentina\/Cordoba","America\/Argentina\/Jujuy","America\/Argentina\/La_Rioja","America\/Argentina\/Mendoza","America\/Argentina\/Rio_Gallegos","America\/Argentina\/Salta","America\/Argentina\/San_Juan","America\/Argentina\/San_Luis","America\/Argentina\/Tucuman","America\/Argentina\/Ushuaia","America\/Aruba","America\/Asuncion","America\/Atikokan","America\/Bahia","America\/Bahia_Banderas","America\/Barbados","America\/Belem","America\/Belize","America\/Blanc-Sablon","America\/Boa_Vista","America\/Bogota","America\/Boise","America\/Cambridge_Bay","America\/Campo_Grande","America\/Cancun","America\/Caracas","America\/Cayenne","America\/Cayman","America\/Chicago","America\/Chihuahua","America\/Ciudad_Juarez","America\/Costa_Rica","America\/Creston","America\/Cuiaba","America\/Curacao","America\/Danmarkshavn","America\/Dawson","America\/Dawson_Creek","America\/Denver","America\/Detroit","America\/Dominica","America\/Edmonton","America\/Eirunepe","America\/El_Salvador","America\/Fort_Nelson","America\/Fortaleza","America\/Glace_Bay","America\/Goose_Bay","America\/Grand_Turk","America\/Grenada","America\/Guadeloupe","America\/Guatemala","America\/Guayaquil","America\/Guyana","America\/Halifax","America\/Havana","America\/Hermosillo","America\/Indiana\/Indianapolis","America\/Indiana\/Knox","America\/Indiana\/Marengo","America\/Indiana\/Petersburg","America\/Indiana\/Tell_City","America\/Indiana\/Vevay","America\/Indiana\/Vincennes","America\/Indiana\/Winamac","America\/Inuvik","America\/Iqaluit","America\/Jamaica","America\/Juneau","America\/Kentucky\/Louisville","America\/Kentucky\/Monticello","America\/Kralendijk","America\/La_Paz","America\/Lima","America\/Los_Angeles","America\/Lower_Princes","America\/Maceio","America\/Managua","America\/Manaus","America\/Marigot","America\/Martinique","America\/Matamoros","America\/Mazatlan","America\/Menominee","America\/Merida","America\/Metlakatla","America\/Mexico_City","America\/Miquelon","America\/Moncton","America\/Monterrey","America\/Montevideo","America\/Montserrat","America\/Nassau","America\/New_York","America\/Nome","America\/Noronha","America\/North_Dakota\/Beulah","America\/North_Dakota\/Center","America\/North_Dakota\/New_Salem","America\/Nuuk","America\/Ojinaga","America\/Panama","America\/Paramaribo","America\/Phoenix","America\/Port-au-Prince","America\/Port_of_Spain","America\/Porto_Velho","America\/Puerto_Rico","America\/Punta_Arenas","America\/Rankin_Inlet","America\/Recife","America\/Regina","America\/Resolute","America\/Rio_Branco","America\/Santarem","America\/Santiago","America\/Santo_Domingo","America\/Sao_Paulo","America\/Scoresbysund","America\/Sitka","America\/St_Barthelemy","America\/St_Johns","America\/St_Kitts","America\/St_Lucia","America\/St_Thomas","America\/St_Vincent","America\/Swift_Current","America\/Tegucigalpa","America\/Thule","America\/Tijuana","America\/Toronto","America\/Tortola","America\/Vancouver","America\/Whitehorse","America\/Winnipeg","America\/Yakutat","Antarctica\/Casey","Antarctica\/Davis","Antarctica\/DumontDUrville","Antarctica\/Macquarie","Antarctica\/Mawson","Antarctica\/McMurdo","Antarctica\/Palmer","Antarctica\/Rothera","Antarctica\/Syowa","Antarctica\/Troll","Antarctica\/Vostok","Arctic\/Longyearbyen","Asia\/Aden","Asia\/Almaty","Asia\/Amman","Asia\/Anadyr","Asia\/Aqtau","Asia\/Aqtobe","Asia\/Ashgabat","Asia\/Atyrau","Asia\/Baghdad","Asia\/Bahrain","Asia\/Baku","Asia\/Bangkok","Asia\/Barnaul","Asia\/Beirut","Asia\/Bishkek","Asia\/Brunei","Asia\/Chita","Asia\/Choibalsan","Asia\/Colombo","Asia\/Damascus","Asia\/Dhaka","Asia\/Dili","Asia\/Dubai","Asia\/Dushanbe","Asia\/Famagusta","Asia\/Gaza","Asia\/Hebron","Asia\/Ho_Chi_Minh","Asia\/Hong_Kong","Asia\/Hovd","Asia\/Irkutsk","Asia\/Jakarta","Asia\/Jayapura","Asia\/Jerusalem","Asia\/Kabul","Asia\/Kamchatka","Asia\/Karachi","Asia\/Kathmandu","Asia\/Khandyga","Asia\/Kolkata","Asia\/Krasnoyarsk","Asia\/Kuala_Lumpur","Asia\/Kuching","Asia\/Kuwait","Asia\/Macau","Asia\/Magadan","Asia\/Makassar","Asia\/Manila","Asia\/Muscat","Asia\/Nicosia","Asia\/Novokuznetsk","Asia\/Novosibirsk","Asia\/Omsk","Asia\/Oral","Asia\/Phnom_Penh","Asia\/Pontianak","Asia\/Pyongyang","Asia\/Qatar","Asia\/Qostanay","Asia\/Qyzylorda","Asia\/Riyadh","Asia\/Sakhalin","Asia\/Samarkand","Asia\/Seoul","Asia\/Shanghai","Asia\/Singapore","Asia\/Srednekolymsk","Asia\/Taipei","Asia\/Tashkent","Asia\/Tbilisi","Asia\/Tehran","Asia\/Thimphu","Asia\/Tokyo","Asia\/Tomsk","Asia\/Ulaanbaatar","Asia\/Urumqi","Asia\/Ust-Nera","Asia\/Vientiane","Asia\/Vladivostok","Asia\/Yakutsk","Asia\/Yangon","Asia\/Yekaterinburg","Asia\/Yerevan","Atlantic\/Azores","Atlantic\/Bermuda","Atlantic\/Canary","Atlantic\/Cape_Verde","Atlantic\/Faroe","Atlantic\/Madeira","Atlantic\/Reykjavik","Atlantic\/South_Georgia","Atlantic\/St_Helena","Atlantic\/Stanley","Australia\/Adelaide","Australia\/Brisbane","Australia\/Broken_Hill","Australia\/Darwin","Australia\/Eucla","Australia\/Hobart","Australia\/Lindeman","Australia\/Lord_Howe","Australia\/Melbourne","Australia\/Perth","Australia\/Sydney","Europe\/Amsterdam","Europe\/Andorra","Europe\/Astrakhan","Europe\/Athens","Europe\/Belgrade","Europe\/Berlin","Europe\/Bratislava","Europe\/Brussels","Europe\/Bucharest","Europe\/Budapest","Europe\/Busingen","Europe\/Chisinau","Europe\/Copenhagen","Europe\/Dublin","Europe\/Gibraltar","Europe\/Guernsey","Europe\/Helsinki","Europe\/Isle_of_Man","Europe\/Istanbul","Europe\/Jersey","Europe\/Kaliningrad","Europe\/Kirov","Europe\/Kyiv","Europe\/Lisbon","Europe\/Ljubljana","Europe\/London","Europe\/Luxembourg","Europe\/Madrid","Europe\/Malta","Europe\/Mariehamn","Europe\/Minsk","Europe\/Monaco","Europe\/Moscow","Europe\/Oslo","Europe\/Paris","Europe\/Podgorica","Europe\/Prague","Europe\/Riga","Europe\/Rome","Europe\/Samara","Europe\/San_Marino","Europe\/Sarajevo","Europe\/Saratov","Europe\/Simferopol","Europe\/Skopje","Europe\/Sofia","Europe\/Stockholm","Europe\/Tallinn","Europe\/Tirane","Europe\/Ulyanovsk","Europe\/Vaduz","Europe\/Vatican","Europe\/Vienna","Europe\/Vilnius","Europe\/Volgograd","Europe\/Warsaw","Europe\/Zagreb","Europe\/Zurich","Indian\/Antananarivo","Indian\/Chagos","Indian\/Christmas","Indian\/Cocos","Indian\/Comoro","Indian\/Kerguelen","Indian\/Mahe","Indian\/Maldives","Indian\/Mauritius","Indian\/Mayotte","Indian\/Reunion","Pacific\/Apia","Pacific\/Auckland","Pacific\/Bougainville","Pacific\/Chatham","Pacific\/Chuuk","Pacific\/Easter","Pacific\/Efate","Pacific\/Fakaofo","Pacific\/Fiji","Pacific\/Funafuti","Pacific\/Galapagos","Pacific\/Gambier","Pacific\/Guadalcanal","Pacific\/Guam","Pacific\/Honolulu","Pacific\/Kanton","Pacific\/Kiritimati","Pacific\/Kosrae","Pacific\/Kwajalein","Pacific\/Majuro","Pacific\/Marquesas","Pacific\/Midway","Pacific\/Nauru","Pacific\/Niue","Pacific\/Norfolk","Pacific\/Noumea","Pacific\/Pago_Pago","Pacific\/Palau","Pacific\/Pitcairn","Pacific\/Pohnpei","Pacific\/Port_Moresby","Pacific\/Rarotonga","Pacific\/Saipan","Pacific\/Tahiti","Pacific\/Tarawa","Pacific\/Tongatapu","Pacific\/Wake","Pacific\/Wallis","UTC"],"version":"4.0.19","payment_option_woo":"on","payment_option_stripe":"","payment_option_paypal":"","currency_symbol":"$","nonce":"3b5006f705","timetics_pro_active":"","etn_purchase_login_required":"","etn_hide_seats_from_details":"","etn_primary_color":"#2878eb","etn_secondary_color":"","decimal_separator":"comma_dot","thousand_separator":",","decimals":"2","price_format":"%1$s%2$s","currency_position":"left","elementor_supported":""};
+var localized_data_obj = {"ajax_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","site_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog","evnetin_pro_active":"","locale_name":"en-us","start_of_week":"1","expired":"Expired","author_id":"0","nonce":"3b5006f705","scanner_common_msg":"Something went wrong! Please try again.","ticket_scanner_link":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/edit.php?post_type=etn-attendee","attendee_form_validation_msg":{"email":{"invalid":"Email is not valid","empty":"Please fill the field"},"tel":{"empty":"Please fill the field","invalid":"Invalid phone number","only_number":"Only number allowed"},"text":"Please fill the field","number":"Please input a number","date":"Please fill the field","radio":"Please check the field"},"post_id":"5836","currency_symbol":"$"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-event-solution/build/js/event-manager-public.js?ver=4.0.19" id="etn-public-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementskit-lite/libs/framework/assets/js/frontend-script.js?ver=3.3.7" id="elementskit-framework-js-frontend-js"></script>
+<script type="text/javascript" id="elementskit-framework-js-frontend-js-after">
+/* <![CDATA[ */
+		var elementskit = {
+			resturl: 'https://demo-themewinter.com/courselog/woo-courselog/wp-json/elementskit/v1/',
+		}
+
+		
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/elementskit-lite/widgets/init/assets/js/widget-scripts.js?ver=3.3.7" id="ekit-widget-scripts-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/TweenMax.min.js?ver=1.5.9" id="tweenmax-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/jquery.easing.1.3.js?ver=1.5.9" id="jquery-easing-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/tilt.jquery.min.js?ver=1.5.9" id="tilt-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/anime.js?ver=1.5.9" id="animejs-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/magician.js?ver=1.5.9" id="magicianjs-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/sourcebuster/sourcebuster.min.js?ver=9.5.2" id="sourcebuster-js-js"></script>
+<script type="text/javascript" id="wc-order-attribution-js-extra">
+/* <![CDATA[ */
+var wc_order_attribution = {"params":{"lifetime":1.0e-5,"session":30,"base64":false,"ajaxurl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","prefix":"wc_order_attribution_","allowTracking":true},"fields":{"source_type":"current.typ","referrer":"current_add.rf","utm_campaign":"current.cmp","utm_source":"current.src","utm_medium":"current.mdm","utm_content":"current.cnt","utm_id":"current.id","utm_term":"current.trm","utm_source_platform":"current.plt","utm_creative_format":"current.fmt","utm_marketing_tactic":"current.tct","session_entry":"current_add.ep","session_start_time":"current_add.fd","session_pages":"session.pgs","session_count":"udata.vst","user_agent":"udata.uag"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/woocommerce/assets/js/frontend/order-attribution.min.js?ver=9.5.2" id="wc-order-attribution-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/bootstrap.min.js?ver=1.4.1" id="bootstrap-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/jquery.magnific-popup.min.js?ver=1.4.1" id="magnific-popup-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/jquery.filterizr.min.js?ver=1.4.1" id="jquery-filterizr-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/owl.carousel.min.js?ver=1.4.1" id="owl-carousel-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/jquery.countdown.min.js?ver=1.4.1" id="jquery-countdown-js"></script>
+<script type="text/javascript" id="courselog-script-js-extra">
+/* <![CDATA[ */
+var courselog_obj = {"ajax_url":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","nonce":"0aa1b6dbbf","security":"a4fc23cf15","blog_sticky_sidebar":"no","logged_in":"","message_login":"You are not logged in"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/script.js?ver=1.4.1" id="courselog-script-js"></script>
+<script type="text/javascript" src="https://demo-themewinter.com/courselog/woo-courselog/wp-includes/js/comment-reply.min.js?ver=6.7.1" id="comment-reply-js" async="async" data-wp-strategy="async"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.26.4" id="font-awesome-4-shim-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/metform/public/assets/js/htm.js?ver=3.9.2" id="htm-js"></script>
+<script type="text/javascript" id="metform-app-js-extra">
+/* <![CDATA[ */
+var mf = {"postType":"product","restURI":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-json\/metform\/v1\/forms\/views\/","minMsg1":"Minimum length should be ","Msg2":" character long.","maxMsg1":"Maximum length should be ","maxNum":"Maximum number should be ","minNum":"Minimum number should be "};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/metform/public/assets/js/app.js?ver=3.9.2" id="metform-app-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.26.4" id="elementor-webpack-runtime-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.26.4" id="elementor-frontend-modules-js"></script>
+<script type="text/javascript" src="../../wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script type="text/javascript" id="elementor-frontend-js-before">
+/* <![CDATA[ */
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Share on Facebook","shareOnTwitter":"Share on Twitter","pinIt":"Pin it","download":"Download","downloadImage":"Download image","fullscreen":"Fullscreen","zoom":"Zoom","share":"Share","playVideo":"Play Video","previous":"Previous","next":"Next","close":"Close","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile Portrait","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Landscape","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Laptop","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},
+"hasCustomBreakpoints":false},"version":"3.26.4","is_static":false,"experimentalFeatures":{"additional_custom_breakpoints":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"e_css_smooth_scroll":true,"home_screen":true,"landing-pages":true,"nested-elements":true,"editor_v2":true,"link-in-bio":true,"floating-buttons":true},"urls":{"assets":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-content\/uploads\/sites\/2"},"nonces":{"floatingButtonsClickTracking":"4b5691c3ae"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":5836,"title":"Processing%20streaming%20data%20using%20apache%20flank%20%E2%80%93%20Woo%20Courselog","excerpt":"Our practical projects will allow you\r\nto get started portfolio.","featuredImage":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-content\/uploads\/sites\/2\/2021\/01\/course_image2.jpg"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.26.4" id="elementor-frontend-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/wp-event-solution/assets/js/elementor.js?ver=4.0.19" id="etn-elementor-inputs-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/elementor.js?ver=1.4.1" id="courselog-main-elementor-js"></script>
+<script type="text/javascript" src="../../wp-content/themes/courselog/assets/js/widget-scripts-pro.js?ver=1.4.1" id="courselog-widget-scripts-pro-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/elementskit-lite/widgets/init/assets/js/animate-circle.min.js?ver=3.3.7" id="animate-circle-js"></script>
+<script type="text/javascript" id="elementskit-elementor-js-extra">
+/* <![CDATA[ */
+var ekit_config = {"ajaxurl":"https:\/\/demo-themewinter.com\/courselog\/woo-courselog\/wp-admin\/admin-ajax.php","nonce":"3b01efb839"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="../../wp-content/plugins/elementskit-lite/widgets/init/assets/js/elementor.js?ver=3.3.7" id="elementskit-elementor-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/sticky-content/assets/js/jquery.sticky.js?ver=1.0.2" id="elementskit-sticky-content-script-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/sticky-content/assets/js/main.js?ver=1.0.2" id="elementskit-sticky-content-script-core-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/widget-init.js?ver=1.5.9" id="elementskit-parallax-widget-init-js"></script>
+<script type="text/javascript" src="../../wp-content/plugins/courselog-essential/modules/parallax/assets/js/section-init.js?ver=1.5.9" id="elementskit-parallax-section-init-js"></script>
+
+</body>
+</html>
+
+
+<!-- Page uncached by LiteSpeed Cache 6.5.4 on 2025-01-15 09:15:24 -->
