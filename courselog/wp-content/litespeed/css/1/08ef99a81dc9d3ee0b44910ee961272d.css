@@ -188,11 +188,11 @@
     font-weight: 700;
     line-height: 28px;
     color: #120f2d;
-    padding: 15px 25px
+    padding: 10px 12px
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li>a .ekit-menu-icon {
-    margin: 0 20px 0 0
+    margin: 0 20px 0 0;
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li {
@@ -206,6 +206,7 @@
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li:hover>a {
     color: #fff
+    /* background-color: red; */
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav .elementskit-dropdown>li>a {
@@ -777,6 +778,7 @@
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-navbar-nav li:hover .ekit-menu-icon {
     background: rgba(255, 255, 255, .1);
     color: #fff !important
+
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .vertical-menu-icon {
