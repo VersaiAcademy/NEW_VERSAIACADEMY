@@ -2719,7 +2719,10 @@ div.twentytwenty-handle {
         display: block;
         position: relative;
         z-index: 5;
-        width: 100%
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 
     .elementskit-navbar-nav-default .elementskit-nav-identity-panel .elementskit-site-title {
@@ -3408,6 +3411,8 @@ div.twentytwenty-handle {
     .ekit-vertical-navbar-nav li.elementskit-megamenu-has:hover>.elementskit-megamenu-panel {
         -webkit-transform: translateY(0);
         transform: translateY(0);
+
+        /* workingg */
         opacity: 1;
         visibility: visible;
         pointer-events: auto
@@ -7014,7 +7019,7 @@ a:hover>.a:hover\:met_scaley--200:hover {
     display: flex;
     -webkit-box-align: start;
     -ms-flex-align: start;
-    align-items: flex-start
+    align-items: center;
 }
 
 @media (min-width:1025px) {
@@ -16087,9 +16092,7 @@ body.admin-bar .ekit-promo-popup.mfp-ready .mfp-close {
     visibility: visible
 }
 
-.ekit-wid-con .elementskit-infobox.icon-lef-right-aligin {
-    padding: 15px
-}
+
 
 .ekit-wid-con .elementkit-infobox-icon.framed {
     border: 2px solid red;
@@ -16097,7 +16100,7 @@ body.admin-bar .ekit-promo-popup.mfp-ready .mfp-close {
 }
 
 .ekit-wid-con .elementskit-infobox.icon-lef-right-aligin {
-    padding: 15px 30px
+    padding: 12px 0px;
 }
 
 .ekit-wid-con .elementkit-infobox-icon.framed.round {

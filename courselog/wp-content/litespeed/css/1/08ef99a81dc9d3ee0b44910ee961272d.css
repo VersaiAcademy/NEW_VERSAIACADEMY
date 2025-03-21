@@ -1,3 +1,10 @@
+:root{
+    --myYellow:#ffbb00;
+    --myWhite:#ffffff;
+    --myRed:#f14d5d;
+    --myBlack:#000;
+    --secYell:rgb(238, 139, 27);
+}
 .elementor-138 .elementor-element.elementor-element-8ba937a:not(.elementor-motion-effects-element-type-background),
 .elementor-138 .elementor-element.elementor-element-8ba937a>.elementor-motion-effects-container>.elementor-motion-effects-layer {
     background-color: #120f2d
@@ -126,13 +133,14 @@
 
 .elementor-138 .elementor-element.elementor-element-db3f74d:not(.elementor-motion-effects-element-type-background),
 .elementor-138 .elementor-element.elementor-element-db3f74d>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: #fff
+    background-color:#d3aa39!important;
 }
 
 .elementor-138 .elementor-element.elementor-element-db3f74d {
     box-shadow: 0px 6px 15px 0px rgba(0, 0, 0, .04);
     transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-    padding: 15px 25px 15px 40px;
+    /* padding: 15px 25px 15px 40px; */
+    padding: 0 20px;
     overflow: visible
 }
 
@@ -164,31 +172,37 @@
 .elementor-138 .elementor-element.elementor-element-43eeffd {
     width: auto;
     max-width: auto;
-    align-self: flex-start
+    /* align-self: flex-start */
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-menu-tigger {
+    display: inline-block;
     font-family: "Manrope", Sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 23px;
-    color: #2878eb;
+    color: #201f5f;
     background-color: #02010100;
-    padding: 20px
+    padding-top:calc(25px + 0.6vw)!important;
+    padding-bottom:calc(25px + 0.6vw)!important;
+    position: relative;
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav {
+    background-color:#7a6d66;
     box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .5);
-    border-radius: 0 0 0 12px
+    border-radius: 0 0 0 12px;
+
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li>a {
     font-family: "Manrope", Sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: calc(14px + 0.2vw);
+    font-weight: 500;
     line-height: 28px;
-    color: #120f2d;
-    padding: 10px 12px
+    color: #ddd;
+    padding: 12px 12px;
+    border-top: 0.1px solid #9b9999;
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li>a .ekit-menu-icon {
@@ -201,7 +215,8 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li>a:hover {
-    color: #fff
+    color: #fff;
+    background-color: var(--e-global-color-secondary);
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li:hover>a {
@@ -224,7 +239,7 @@
 
 .elementor-138 .elementor-element.elementor-element-9483a54 .search-course-input {
     color: #6c6c7f;
-    background: #f5f8fb;
+    /* background: #f5f8fb; */
     border-style: solid;
     border-width: 0;
     border-radius: 5px;
@@ -240,7 +255,7 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-9483a54 .courselog-search-course-form .search-course-button {
-    color: #2878eb;
+    color: #201f5f;
     background: #FFFFFF00;
     width: 20px;
     height: 50px !important;
@@ -271,7 +286,7 @@
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-menu-container {
     height: 40px;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 0
 }
 
@@ -284,47 +299,47 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:hover {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:focus {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:active {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li:hover>a {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li:hover>a .elementskit-submenu-indicator {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:hover .elementskit-submenu-indicator {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:focus .elementskit-submenu-indicator {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:active .elementskit-submenu-indicator {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li.current-menu-item>a {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li.current-menu-ancestor>a {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li.current-menu-ancestor>a .elementskit-submenu-indicator {
-    color: #2878eb
+    color: #201f5f
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a .elementskit-submenu-indicator {
@@ -446,14 +461,14 @@
 .elementor-138 .elementor-element.elementor-element-5011564 .elementskit-btn {
     padding: 15px 22px;
     font-weight: 600;
-    background-color: #f14d5d;
+    background-color: #201f5f;
     border-style: none;
     border-radius: 5px
 }
 
 .elementor-138 .elementor-element.elementor-element-5011564 .elementskit-btn:hover {
     color: #fff;
-    background-color: #2878eb
+    background-color: #191970;
 }
 
 .elementor-138 .elementor-element.elementor-element-5011564 .elementskit-btn:hover svg path {
@@ -683,7 +698,7 @@
     }
 
     .elementor-138 .elementor-element.elementor-element-edfb3f8 .ekit-vertical-navbar-nav>li>a {
-        font-size: 16px;
+        /* font-size: 16px; */
         padding: 0 40px 15px 15px
     }
 
@@ -735,7 +750,7 @@
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-menu-container {
     min-width: 370px;
-    margin-top: 18px
+    /* margin-top: 18px */
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-main-menu-on-click .ekit-vertical-menu-container {
@@ -744,7 +759,7 @@
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-main-menu-wraper:hover .ekit-vertical-menu-container {
     display: block;
-    top: 40px
+    top: 100%;
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit_menu_label {
@@ -772,12 +787,13 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-navbar-nav li:hover {
-    background: #2878eb
+    /* background: #201f5f */
+
 }
 
 .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-navbar-nav li:hover .ekit-menu-icon {
     background: rgba(255, 255, 255, .1);
-    color: #fff !important
+    color: #fff !important;
 
 }
 
@@ -792,16 +808,16 @@
     }
 
     .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-menu-tigger {
-        padding: 18px 0
+        padding: 18px 0;
     }
 
     .megamenu-section .mega-menu-items .elementor-element-populated {
         padding: 20px 0 0 30px !important
     }
 
-    .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-menu-container {
+    /* .elementor-138 .elementor-element.elementor-element-edfb3f8.category-mega-menu .ekit-vertical-menu-container {
         margin-top: 15px
-    }
+    } */
 }
 
 @media(max-width:1175px) {
@@ -831,7 +847,7 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:after {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
@@ -840,7 +856,7 @@
     height: 2px;
     width: 0;
     background-color: #3478f6;
-    transition: all .4s ease
+    transition: all .4s ease */
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li>a:hover:after {

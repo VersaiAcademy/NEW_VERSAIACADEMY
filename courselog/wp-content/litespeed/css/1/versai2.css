@@ -1,0 +1,214 @@
+:root{
+    --myYellow:#ffbb00;
+    --myWhite:#ffffff;
+    --myRed:#f14d5d;
+    --myBlack:#000;
+    --secYell:rgb(238, 139, 27);
+}
+
+/* --------mypoppina font-family --------- */
+@font-face{
+    font-family: mypoppins;
+    src: url('../../../../../s/poppins/Poppins-SemiBold.ttf');
+}
+.elementor-background-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.89;
+    transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
+    inset: 0;
+    position: absolute;
+    box-sizing: border-box;
+}
+.about-container{
+    margin: 5rem 0;
+}
+.vers-about{
+    width: 60%;
+    margin: auto;
+}
+@media(max-width:992px){
+    .vers-about{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media(max-width:768px){
+    .vers-about{
+        width: 95%;
+        margin: auto;
+    }
+}
+.vers-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: calc(10px + 1vw);
+}
+.vers-desc .best-educa{
+    padding-top: calc(70px + 5vw);
+    text-align: center;
+    font-size: calc(24px + 1.3vw);
+    font-weight: 800;
+    color:var(--myYellow);
+}
+
+
+.vers-about .empo-desc{
+    font-size: calc(14px + 0.1vw)!important;
+    font-family: mypoppins;
+    text-align: center;
+    font-weight: 500 !important;
+    color:#ddd;
+    line-height: 26px;
+}
+
+
+.vers-desc .start-cource{
+    text-decoration: none;
+    display: inline-block;
+    background-color: #201f5f;
+    padding: calc(10px + 0.5vw) calc(15px + 0.5vw);
+    font-size: calc(14px + 0.1vw);
+    font-weight: 600;
+    border-radius: 5px;
+    color: var(--myWhite);
+
+}
+
+.vers-desc .start-cource:hover{
+    background-color: #11103a;
+}
+
+
+/* ------------anil sir------------- */
+.row-aboutver{
+    padding-bottom: calc(50px + 1vw);
+    display: flex;
+    flex-wrap: wrap;
+}
+.row-aboutcol1{
+    width: 40%;
+}
+.row-aboutcol1 img{
+    height: calc(250px + 5vw)!important;
+    width: calc(250px + 5vw)!important;
+    border-radius: 8px;
+    width: 100%;
+}
+.row-aboutcol2{
+    width: 60%;
+}
+
+
+.row-aboutcol2 .ceo-desc{
+    font-size: calc(14px + 0.2vw);
+    font-weight: 500;
+    line-height: 0px;
+    color: var(--myRed);
+}
+.ceo-content{
+        font-size: calc(14px + 0.1vw);
+        letter-spacing: 0.3px;
+        font-weight: 600;
+}
+@media(max-width:992px){
+    .row-aboutcol1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+    .row-aboutcol1 img{
+        border-radius: 100%;
+    }
+    .row-aboutcol2{
+        width: 100%;
+    }
+}
+
+
+/* ------------our milestones------------- */
+.about-container{
+    width: 85%;
+    margin: auto;
+}
+
+@media(max-width:720px){
+    .about-container{
+        width: 95%;
+        margin: auto;
+    }
+}
+.about-box{
+    width: 60%;
+    margin: auto;
+}
+@media(max-width:720px){
+    .about-box{
+        width: 100%!important;
+        margin: auto;
+    }
+}
+.about-box{
+    padding-bottom: calc(20px + 0.5vw);
+}
+.about-box .our-milestones{
+    text-align: center;
+    font-size: calc(20px + 1vw);
+    font-weight: 900;
+}
+.about-box .celebrate-desc{
+    text-align: center;
+    font-size: calc(14px + 0.1vw);
+    letter-spacing: 0.3px;
+    font-weight: 600;
+}
+.about-row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.about-row .about-col{
+    margin-bottom: calc(20px + 0.5vw);
+}
+
+.about-row .about-col .about-card{
+    padding: 10px;
+}
+
+.about-row .about-col .about-cardhead{
+    text-align: center;
+    color: #11103a;
+    font-size: calc(18px + 0.5vw);
+    font-weight: 600;
+    position: relative;
+}
+.about-row .about-col .about-cardhead::before{
+    content: "";
+    display: block;
+    width: 20%;
+    height: 3px;
+    background-color: #11103a;
+    position: absolute;
+    top: 150%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.about-row .about-col .about-carddesc{
+    font-size: calc(14px + 0.1vw);
+    /* font-weight: 550; */
+    font-family: mypoppins;
+    color: #2e2c2c;
+    word-spacing: calc(5px + 0.2vw);
+    padding-top: calc(15px + 0.5vw);
+
+}
+.about-row .about-col{
+    width: 50%;
+}
+@media(max-width:768px){
+    .about-row .about-col{
+        width: 100%;
+    }
+    
+}

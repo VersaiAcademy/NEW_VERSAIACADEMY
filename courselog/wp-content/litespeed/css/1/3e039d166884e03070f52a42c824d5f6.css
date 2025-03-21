@@ -1,14 +1,14 @@
 .elementor-521 .elementor-element.elementor-element-d552d7b {
     overflow: visible;
     transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
-    margin-top: 125px;
+    margin-top: calc(30px + 1.5vw);
     margin-bottom: 0;
     padding: 65px 0 0
 }
 
 .elementor-521 .elementor-element.elementor-element-d552d7b:not(.elementor-motion-effects-element-type-background),
 .elementor-521 .elementor-element.elementor-element-d552d7b>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-color: #120f2d
+    background-color: #1a1a1a;
 }
 
 .elementor-521 .elementor-element.elementor-element-d552d7b>.elementor-background-overlay {
@@ -45,7 +45,7 @@
 .elementor-521 .elementor-element.elementor-element-00ed781 .elementskit-section-title-wraper .elementskit-section-title {
     color: #fff;
     font-size: 31px;
-    font-weight: 700;
+    font-weight: 500;
     line-height: 42px
 }
 
@@ -67,10 +67,6 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-4852249 {
-    border-style: solid;
-    border-width: 0 0 1px;
-    border-color: #2a2742;
-    transition: background .3s, border .3s, border-radius .3s, box-shadow .3s;
     padding: 0 0 37px;
     overflow: visible
 }
@@ -80,9 +76,9 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-3143e19 .elementskit-section-title-wraper .elementskit-section-title {
-    color: #fff;
+    color: #b8b7c0;
     margin: 0;
-    font-size: 20px;
+    font-size: calc(18px + 0.1vw)!important;
     font-weight: 700
 }
 
@@ -118,16 +114,19 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-f953546 .elementor-icon-list-text {
-    color: #b8b7c0
+    color: #ddd;
+    font-size: calc(14px + 0.1vw)!important;
+    font-weight: 500;
 }
 
 .elementor-521 .elementor-element.elementor-element-f953546 .elementor-icon-list-item:hover .elementor-icon-list-text {
-    color: #fff
+    color: #fff;
+    text-decoration: underline;
 }
 
 .elementor-521 .elementor-element.elementor-element-f953546 .elementor-icon-list-item {
     font-family: "Manrope", Sans-serif;
-    font-weight: 400
+    font-weight: 700
 }
 
 .elementor-521 .elementor-element.elementor-element-f953546 .ekit_menu_label {
@@ -135,9 +134,9 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-64ebb23 .elementskit-section-title-wraper .elementskit-section-title {
-    color: #fff;
+    color: #b8b7c0;
     margin: 0;
-    font-size: 20px;
+    font-size: calc(18px + 0.1vw)!important;
     font-weight: 700
 }
 
@@ -173,16 +172,19 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-7e3e319 .elementor-icon-list-text {
-    color: #b8b7c0
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
 }
 
 .elementor-521 .elementor-element.elementor-element-7e3e319 .elementor-icon-list-item:hover .elementor-icon-list-text {
-    color: #fff
+    color: #fff;
+    text-decoration: underline;
 }
 
 .elementor-521 .elementor-element.elementor-element-7e3e319 .elementor-icon-list-item {
     font-family: "Manrope", Sans-serif;
-    font-weight: 400
+    font-weight: 700
 }
 
 .elementor-521 .elementor-element.elementor-element-7e3e319 .ekit_menu_label {
@@ -190,19 +192,13 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-b1cdf2f .elementskit-section-title-wraper .elementskit-section-title {
-    color: #fff;
+    color: #b8b7c0;
     margin: 0;
-    font-size: 20px;
-    font-weight: 700
+    font-size: calc(18px + 0.1vw) !important;
+    font-weight: 500;
 }
 
-.elementor-521 .elementor-element.elementor-element-b1cdf2f .elementskit-section-title-wraper .elementskit-section-title>span {
-    color: #000
-}
 
-.elementor-521 .elementor-element.elementor-element-b1cdf2f .elementskit-section-title-wraper .elementskit-section-title:hover>span {
-    color: #000
-}
 
 .elementor-521 .elementor-element.elementor-element-0ed1bd4 .elementor-icon-list-item>a {
     padding: 0 0 7px !important
@@ -228,16 +224,19 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-0ed1bd4 .elementor-icon-list-text {
-    color: #b8b7c0
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
 }
 
 .elementor-521 .elementor-element.elementor-element-0ed1bd4 .elementor-icon-list-item:hover .elementor-icon-list-text {
-    color: #fff
+    color: #fff;
+    text-decoration: underline;
 }
 
 .elementor-521 .elementor-element.elementor-element-0ed1bd4 .elementor-icon-list-item {
     font-family: "Manrope", Sans-serif;
-    font-weight: 400
+    font-weight: 700
 }
 
 .elementor-521 .elementor-element.elementor-element-0ed1bd4 .ekit_menu_label {
@@ -251,10 +250,11 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-11c9913 .elementskit-section-title-wraper .elementskit-section-title {
-    color: #fff;
-    margin: 0 0 10px;
-    font-size: 20px;
-    font-weight: 700
+    /* margin: 0 0 10px; */
+    color: #b8b7c0;
+    margin: 0;
+    font-size: calc(18px + 0.1vw) !important;
+    font-weight: 500;
 }
 
 .elementor-521 .elementor-element.elementor-element-11c9913 .elementskit-section-title-wraper .elementskit-section-title>span {
@@ -291,8 +291,9 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-70f2a9e .elementskit-infobox .box-body>p {
-    color: #b8b7c0;
-    font-size: 16px;
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
     line-height: 24px
 }
 
@@ -355,16 +356,24 @@
     color: #000
 }
 
-.elementor-521 .elementor-element.elementor-element-1544546 .elementskit-infobox .box-body>p {
-    color: #b8b7c0;
-    font-size: 16px;
+.elementor-521 .elementor-element.elementor-element-1544546 .elementskit-infobox .box-body>a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
     line-height: 24px
 }
 
 .elementor-521 .elementor-element.elementor-element-1544546 .elementskit-infobox:hover .box-body>p {
     color: #b8b7c0
 }
-
+.ekit-wid-con .elementskit-infobox .box-body >a{
+    text-decoration: none;
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
+    line-height: 24px   
+}
 .elementor-521 .elementor-element.elementor-element-1544546 .elementskit-infobox p {
     margin: 0
 }
@@ -424,9 +433,11 @@
     color: #000
 }
 
-.elementor-521 .elementor-element.elementor-element-2909584 .elementskit-infobox .box-body>p {
-    color: #b8b7c0;
-    font-size: 16px;
+.elementor-521 .elementor-element.elementor-element-2909584 .elementskit-infobox .box-body>a {
+    text-decoration: none;
+    color: #ddd;
+    font-size: calc(14px + 0.1vw) !important;
+    font-weight: 500;
     line-height: 24px
 }
 
@@ -572,7 +583,8 @@
 }
 
 .elementor-521 .elementor-element.elementor-element-61d9902 {
-    padding: 20px 0 1px;
+    padding: calc(15px + 0.2vw) 0px;
+    background-color: rgb(24, 23, 23);
     overflow: visible
 }
 

@@ -547,7 +547,7 @@ h1.entry-title {
 }
 
 .elementor-widget:not(:last-child) {
-    margin-bottom: var(--kit-widget-spacing, 20px)
+    margin-bottom: var(--kit-widget-spacing, 20px);
 }
 
 .elementor-widget:not(:last-child).elementor-absolute,
@@ -640,7 +640,8 @@ h1.entry-title {
 
     .elementor-column.elementor-col-50,
     .elementor-column[data-col="50"] {
-        width: 50%
+        width: 60%;
+        margin: auto;
     }
 
     .elementor-column.elementor-col-60,

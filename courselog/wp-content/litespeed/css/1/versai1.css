@@ -1,0 +1,174 @@
+:root{
+    --myYellow:#ffbb00;
+    --myWhite:#ffffff;
+    --myRed:#f14d5d;
+    --myBlack:#000;
+    --secYell:rgb(238, 139, 27);
+}
+
+.ekit-heading__description>.homejoin-versai{
+    margin-bottom:calc(20px + 1vw)!important;
+    margin-top:calc(20px + 1vw)!important;    
+}
+.ekit-heading__description .homejoin-versai .join-versai{
+    font-size: 14px!important;
+    text-align: center;
+    font-weight: 600!important;
+    color: var(--myWhite);
+    line-height: 20px!important;
+}
+
+
+.ekit-heading__description .homejoin-versai .join-versai>.joinver-span1{
+    color: var(--myWhite)!important;
+    font-style: italic;
+}
+
+.ekit-heading__description .homejoin-versai .join-versai>.joinver-span2{
+    color: var(--myYellow);
+}
+
+.vercource-content{
+    font-size: 14px!important;
+    text-align: center;
+    font-weight: 600!important;
+    color: var(--myWhite); 
+    line-height: 22px;
+}
+/* +++++++++++++++++versai placements+++++++++++++++++ */
+.place-row{
+    display: flex;
+    justify-content: start;
+    flex-wrap:wrap;
+}
+.place-row .place-col{
+    width: 33.33%; 
+    padding: calc(5px + 0.5vw);
+    margin-bottom: calc(15px + 1.2vw);
+}
+
+.place-card{
+    border-radius: calc(6px + 1vw);
+    /* padding: 15px; */
+    /* border: 1px solid #ddd; */
+    /* background-color: #ddd; */
+}
+.place-head{
+    /* color: #5C4033; */
+    color: #2F4F4F;
+    color: #003366;
+    /* color: var(--secYell); */
+    font-size: calc(18px + 0.5vw);
+    font-family: "Manrope";
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.place-cont p{
+    font-size: calc(14px + 0.1vw);
+    font-weight: 600;
+    font-family: "Manrope", Sans-serif;
+    line-height: calc(20px + 0.5vw);
+    letter-spacing: .6px;
+    color: #4F4F4F; 
+    /* color: rgba(85, 60, 30, 1);  */
+    /* color: rgba(50, 50, 50, 1); */
+    text-align: center;
+}
+
+.place-hr{
+    background-color: #DC143C; 
+    /* border: 1.8px dotted; */
+    height: 2px;
+    width: 90%;
+    margin: auto;
+}
+
+
+@media(max-width:992px){
+   .place-row .place-col{
+     width: 50%!important;
+}
+}
+@media(max-width:768px){
+    .place-row .place-col{
+     width: 100%!important;
+}
+}
+/*++++++++++++++versai testimonial+++++++++++++*/
+
+.vercard-sec{
+    display: flex;
+}
+
+.versrow{
+    background-color: #ffffff;
+    border-radius: calc(6px + 0.5vw);
+}
+.verscard{
+    display: flex;
+    flex-direction: column;
+    gap: calc(5px + 0.3vw);
+    padding: calc(16px + 0.5vw);
+}
+
+.versdisimg-versquote{
+    display: flex;
+    justify-content: space-between;
+}
+.verscard .verscol img{
+    height: calc(50px + 1vw)!important;
+    width: calc(50px + 1vw)!important;
+    border-radius:100%;
+    border: 2px solid #D3D3D3;;
+}
+
+.versdisimg{
+    display: flex;
+    align-items: center;
+    gap: calc(10px + 0.5vw);
+}
+.vers-devl{
+    font-size: calc(17px + 0.3vw);
+    font-weight: 700;
+    color: var(--myBlack);
+}
+.vers-position{
+    font-size: calc(14px + 0.2vw);
+    font-weight: 500;
+    color: #676767;
+}
+.vers-quote svg{
+    color: var(--myYellow);
+}
+.vers-content{
+    font-family: "Manrope", Sans-serif;
+    line-height: calc(20px + 0.5vw);
+    letter-spacing: .6px;
+    font-size: calc(14px + 0.1vw);
+    line-height: calc(20px + 0.5vw);
+    font-weight: 600;
+    /* color: #58566b; */
+    color: #676767;
+}
+
+.our-commustar{
+    display: flex;
+    height: 10px;
+    color: var(--myYellow);
+    margin-top: -15px;
+}
+
+
+
+
+
+
+
+/* ----------responsive--------- */
+/* our-community */
+@media(max-width:768px){
+    .vercard-sec .owl-nav.disabled+.owl-dots{
+        display: none;
+    }
+}
