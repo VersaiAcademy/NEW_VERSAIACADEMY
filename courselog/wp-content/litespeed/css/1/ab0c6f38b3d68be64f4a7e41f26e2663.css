@@ -1794,9 +1794,9 @@ img.pull-right {
     line-height: 28px;
     cursor: pointer;
     position: relative;
-    margin-right: 20px;
-    padding: 8px 15px 8px 30px;
-    margin-bottom: 20px;
+    margin-right: calc(5px + 0.2vw);
+    /* padding: 8px 15px 8px 30px; */
+    margin-bottom: calc(15px + 0.2vw);
     -webkit-transition: all .5s;
     transition: all .5s;
     border-radius: 0;
@@ -1819,7 +1819,7 @@ img.pull-right {
     box-shadow: 0px 10px 30px rgba(40, 120, 235, .25)
 }
 
-.tab-course-category ul li .course-tab-a:hover:before,
+/* .tab-course-category ul li .course-tab-a:hover:before,
 .tab-course-category ul li .course-tab-a.active:before {
     content: "";
     position: absolute;
@@ -1831,7 +1831,7 @@ img.pull-right {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -ms-border-radius: 20px
-}
+} */
 
 .tab-course-category ul li:last-child {
     margin-right: 0
@@ -1917,7 +1917,7 @@ img.pull-right {
 .courses-tabs .product-tab-a,
 .products-tabs .course-tab-a,
 .products-tabs .product-tab-a {
-    padding: 8px 15px 8px 30px;
+    padding: calc(5px + 0.15vw) calc(8px + 0.2vw);
     border-radius: 4px;
     -webkit-border-radius: 4px;
     -ms-border-radius: 4px
@@ -1939,7 +1939,7 @@ img.pull-right {
     transition: all ease-in-out 2s
 }
 
-.courses-tabs .course-tab-a:hover:before,
+/* .courses-tabs .course-tab-a:hover:before,
 .courses-tabs .course-tab-a.active:before,
 .courses-tabs .product-tab-a:hover:before,
 .courses-tabs .product-tab-a.active:before,
@@ -1957,7 +1957,7 @@ img.pull-right {
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -ms-border-radius: 20px
-}
+} */
 
 .single-course {
     background: #fff;

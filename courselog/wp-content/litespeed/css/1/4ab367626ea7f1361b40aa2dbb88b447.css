@@ -2789,8 +2789,6 @@ div.twentytwenty-handle {
         position: absolute;
         top: 100%;
         left: 0;
-        -webkit-transform: translateY(-10px);
-        transform: translateY(-10px);
         pointer-events: none;
         max-height: none;
         z-index: 999
@@ -7303,7 +7301,7 @@ a:hover>.a:hover\:met_scaley--200:hover {
 
 .ekit-template-content-footer,
 .ekit-template-content-header {
-    clear: both
+    clear: both;
 }
 
 .elementor-edit-area-active .elementor-widget:hover .widgetarea_warper_edit {

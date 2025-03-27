@@ -44,7 +44,7 @@
 .place-row .place-col{
     width: 33.33%; 
     padding: calc(5px + 0.5vw);
-    margin-bottom: calc(15px + 1.2vw);
+    margin-bottom: calc(20px + 1.2vw);
 }
 
 .place-card{
@@ -127,6 +127,9 @@
     display: flex;
     align-items: center;
     gap: calc(10px + 0.5vw);
+}
+.versdisimg-col{
+    padding-right: calc(5px + 0.1vw);
 }
 .vers-devl{
     font-size: calc(17px + 0.3vw);

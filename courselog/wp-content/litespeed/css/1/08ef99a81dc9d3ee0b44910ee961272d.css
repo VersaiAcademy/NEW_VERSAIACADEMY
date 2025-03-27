@@ -158,8 +158,7 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-3189300>.elementor-element-populated {
-    padding: 0 0 0 15px
-}
+    padding: 0 0 0 15px}
 
 .elementor-138 .elementor-element.elementor-element-43eeffd .courselog-widget-logo img {
     max-width: 152px
@@ -200,7 +199,7 @@
     font-size: calc(14px + 0.2vw);
     font-weight: 500;
     line-height: 28px;
-    color: #ddd;
+    color: var(--myBlack);
     padding: 12px 12px;
     border-top: 0.1px solid #9b9999;
 }
@@ -285,7 +284,7 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-menu-container {
-    height: 40px;
+    /* height: 40px; */
     /* background-color: #fff; */
     border-radius: 0
 }
@@ -366,20 +365,20 @@
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: 0px;
-    padding: 15px 30px;
+    padding: calc(10px + 0.2vw) calc(20px + 0.5vw);
     color: #333;
-    background-color: rgba(255, 255, 255, 0);
+    background-color: #7a6d66;
     border-style: solid;
     border-width: 0 0 1px;
     border-color: #f0f0f0
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li>a:hover {
-    color: #3478f6
+    color: var(--myWhite)
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li>a:focus {
-    color: #3478f6
+    color: var(--myWhite)
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li>a:active {
@@ -394,13 +393,11 @@
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li>a:focus,
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li>a:active,
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li:hover>a {
-    background-color: rgba(255, 255, 255, 0)
+    color: var(--myWhite)!important;
+    background-color: #54595f
 }
 
-.elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li.current-menu-item>a {
-    color: #3478f6 !important;
-    background-color: rgba(255, 255, 255, 0)
-}
+
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel>li:last-child>a {
     border-style: solid;
@@ -410,7 +407,7 @@
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav .elementskit-submenu-panel {
     border-style: solid;
     border-width: 0;
-    background-color: #fff;
+    background-color:#7a6d66;
     border-radius: 0 0 5px 5px;
     min-width: 200px
 }
@@ -835,7 +832,7 @@
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .ekit-wid-con .dropdown-item.active {
-    background: rgba(255, 255, 255, .5)
+    /* background: rgba(255, 255, 255, .5) */
 }
 
 .elementor-138 .elementor-element.elementor-element-de707fc .elementskit-navbar-nav>li {

@@ -567,7 +567,7 @@ h1.entry-title {
 }
 
 .elementor-column-gap-default>.elementor-column>.elementor-element-populated {
-    padding: 10px
+    /* padding: 10px */
 }
 
 .elementor-column-gap-extended>.elementor-column>.elementor-element-populated {

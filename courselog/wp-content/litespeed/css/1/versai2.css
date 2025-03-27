@@ -12,7 +12,7 @@
     src: url('../../../../../s/poppins/Poppins-SemiBold.ttf');
 }
 .elementor-background-overlay{
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
     opacity: 0.89;
     transition: background 0.3s, border-radius 0.3s, opacity 0.3s;
     inset: 0;
